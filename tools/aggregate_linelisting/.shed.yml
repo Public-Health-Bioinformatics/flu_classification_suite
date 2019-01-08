@@ -1,0 +1,7 @@
+name: aggregate_linelisting
+owner: diane
+description: Transforms fasta files of flu antigenic maps into an aggregated line list(grouping antigenic maps by province, then clade, then antigenic map sequence), comparing to a reference antigenic map.
+homepage_url: https://github.com/Public-Health-Bioinformatics/flu_classification_suite
+long_description: 
+remote_repository_url: https://github.com/Public-Health-Bioinformatics/flu_classification_suite
+type: unrestricted
