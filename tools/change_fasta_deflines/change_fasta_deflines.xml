@@ -1,0 +1,39 @@
+<tool id="change_fasta_deflines" name="Change Fasta Deflines" version="0.0.1">
+  <requirements>
+    <requirement type="package" version="1.7.0">biopython</requirement>
+  </requirements>
+  <command detect_errors="exit_code"><![CDATA[
+    change_fasta_deflines.py
+    '$key_value_pairs'
+    '$input_fasta'
+    '$output_file'
+    #if $tab_delim
+      -t
+    #end if
+  ]]></command>
+  <inputs>
+    <param name="input_fasta" format="fasta" type="data" />
+    <param name="tab_delim" type="boolean" label="Names file is tab-delimited." checked="false" />
+    <param name="key_value_pairs" format="csv" type="data" />
+  </inputs>
+  <outputs>
+    <data name="output_file" format="fasta"/>
+  </outputs>
+  <tests>
+    <test>
+      <param name="input_fasta" value="fasta_2_rename.fasta" />
+      <param name="key_value_pairs" value="csv_rename_file.csv" />
+      <output name="output_file" value="output.fasta" />
+    </test>
+    <test>
+      <param name="input_fasta" value="fasta_2_rename.fasta" />
+      <param name="key_value_pairs" value="tab_delim_rename_file.txt" />
+      <param name="tab_delim" value="true" />
+      <output name="output_file" value="output.fasta" />
+    </test>
+  </tests>
+  <help><![CDATA[
+  ]]></help>
+  <citations>
+  </citations>
+</tool>

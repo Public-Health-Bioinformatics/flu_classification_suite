@@ -1,0 +1,7 @@
+name: change_fasta_deflines
+owner: diane
+description: Replace names in fasta file definition lines using info from csv or tab-delim text file.
+homepage_url: https://github.com/Public-Health-Bioinformatics/flu_classification_suite
+long_description: 
+remote_repository_url: https://github.com/Public-Health-Bioinformatics/flu_classification_suite
+type: unrestricted
