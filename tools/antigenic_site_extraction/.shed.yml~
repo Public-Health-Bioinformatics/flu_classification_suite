@@ -1,7 +1,0 @@
-name: antigenic_site_extraction
-owner: diane
-description: Extracts antigenic amino acids from flu sequence, using a specific index array (i.e. for H3, H1 etc.)..
-homepage_url: https://github.com/DiDigsDNA/antigenic_site_extraction/
-long_description: 
-remote_repository_url: https://github.com/DiDigsDNA/antigenic_site_extraction/
-type: unrestricted
