@@ -1,0 +1,7 @@
+name: linelisting
+owner: diane
+description: Transforms fasta files of flu antigenic site amino acids into line lists, comparing antigenic maps to that of a reference sequence.
+homepage_url: https://github.com/Public-Health-Bioinformatics/flu_classification_suite
+long_description: 
+remote_repository_url: https://github.com/Public-Health-Bioinformatics/flu_classification_suite
+type: unrestricted
