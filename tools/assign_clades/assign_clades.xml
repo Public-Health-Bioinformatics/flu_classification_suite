@@ -1,0 +1,29 @@
+<tool id="assign_clades" name="Assign Clades" version="0.0.0">
+  <requirements>
+    <requirement type="package" version="1.7.0">biopython</requirement>
+  </requirements>
+  <command detect_errors="exit_code"><![CDATA[
+    assign_clades.py
+    '$input_fasta'
+    '$clade_definitions'
+    '$output_file'
+  ]]></command>
+  <inputs>
+    <param name="input_fasta" format="fasta" type="data" />
+    <param name="clade_definitions" format="csv" type="data" />
+  </inputs>
+  <outputs>
+    <data name="output_file" format="fasta"/>
+  </outputs>
+  <tests>
+    <test>
+      <param name="input_fasta" value="input_fasta.fasta" />
+      <param name="clade_definitions" value="clades.csv" />
+      <output name="output_file" value="output.fasta" />
+    </test>
+  </tests>
+  <help><![CDATA[
+  ]]></help>
+  <citations>
+  </citations>
+</tool>
