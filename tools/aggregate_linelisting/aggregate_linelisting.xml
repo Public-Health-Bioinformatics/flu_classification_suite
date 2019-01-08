@@ -1,0 +1,35 @@
+<tool id="aggregate_linelisting" name="Aggregate Line List" version="0.0.1">
+  <requirements>
+    <requirement type="package" version="1.7.0">biopython</requirement>
+  </requirements>
+  <command detect_errors="exit_code"><![CDATA[
+    aggregate_linelisting.py
+    '$input_fasta'
+    '$ref_fasta'
+    '$index_array_csv'
+    '$clade_def_csv'
+    '$output_file'
+  ]]></command>
+  <inputs>
+    <param name="input_fasta" format="fasta" type="data" label="Sample Sequences fasta."/>
+    <param name="ref_fasta" format="fasta" type="data" label="Reference Sequence fasta."/>
+    <param name="index_array_csv" format="csv" type="data" label="Antigenic Site Index Array File."/>
+    <param name="clade_def_csv" format="csv" type="data" label="Clade Definition File."/>
+  </inputs>
+  <outputs>
+    <data name="output_file" format="csv"/>
+  </outputs>
+  <tests>
+    <test>
+      <param name="input_fasta" value="2017_summer_Nov23_2017_antigenic_maps.fasta"/>
+      <param name="ref_fasta" value="MAP_3C.2a_A_Hong_Kong_4801_2014_X-263B_EGG.fasta" />
+      <param name="index_array_csv" value="FluA_H3_antigenic_aa_indices.csv" />
+      <param name="clade_def_csv" value="Flu_Clade_Definitions_H3_20171121.csv" />
+      <output name="output_file" value="test_output.csv"/>
+    </test>
+  </tests>
+  <help><![CDATA[
+  ]]></help>
+  <citations>
+  </citations>
+</tool>
