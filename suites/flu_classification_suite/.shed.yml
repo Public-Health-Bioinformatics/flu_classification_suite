@@ -1,0 +1,7 @@
+name: flu_classification_suite
+owner: public-health-bioinformatics
+description: Assign clades to fasta sequence files
+homepage_url: https://github.com/Public-Health-Bioinformatics/flu_classification_suite
+long_description: 
+remote_repository_url: https://github.com/Public-Health-Bioinformatics/flu_classification_suite
+type: unrestricted

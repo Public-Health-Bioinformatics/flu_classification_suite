@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<repositories description="This is a metapackage, that will install several other tools.">
+  <repository name="aggregate_linelisting" owner="public-health-bioinformatics" />
+  <repository name="antigenic_site_extraction" owner="public-health-bioinformatics" />
+  <repository name="assign_clades" owner="public-health-bioinformatics" />
+  <repository name="change_fasta_deflines" owner="public-health-bioinformatics" />
+  <repository name="linelisting" owner="public-health-bioinformatics" />
+  <repository name="reformat_usearch_collapsed_fasta" owner="public-health-bioinformatics" />
+</repositories>
