@@ -1,5 +1,5 @@
 name: antigenic_site_extraction
-owner: diane
+owner: public-health-bioinformatics
 description: Extracts antigenic amino acids from flu sequence, using a specific index array (i.e. for H3, H1 etc.)..
 homepage_url: https://github.com/Public-Health-Bioinformatics/flu_classification_suite
 long_description: 
