@@ -1,6 +1,6 @@
 <tool id="assign_clades" name="Assign Clades" version="0.0.1">
   <requirements>
-    <requirement type="package" version="1.7.0">biopython</requirement>
+    <requirement type="package" version="1.70">biopython</requirement>
   </requirements>
   <command detect_errors="exit_code"><![CDATA[
     assign_clades.py
