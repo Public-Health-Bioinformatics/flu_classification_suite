@@ -1,5 +1,5 @@
 name: reformat_usearch_collapsed_fasta
-owner: diane
+owner: public-health-bioinformatics
 description: Reformats sequence names in fasta files collapsed by USearch, adding "_xN" to definition line (N = number of identical sequences in grouping).
 homepage_url: https://github.com/Public-Health-Bioinformatics/flu_classification_suite
 long_description: 
