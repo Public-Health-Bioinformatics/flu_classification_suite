@@ -1,6 +1,6 @@
 <tool id="aggregate_linelisting" name="Aggregate Line List" version="0.0.1">
   <requirements>
-    <requirement type="package" version="1.7.0">biopython</requirement>
+    <requirement type="package" version="1.70">biopython</requirement>
   </requirements>
   <command detect_errors="exit_code"><![CDATA[
     aggregate_linelisting.py
