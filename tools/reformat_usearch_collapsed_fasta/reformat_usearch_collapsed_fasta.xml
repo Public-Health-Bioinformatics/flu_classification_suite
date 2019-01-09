@@ -1,4 +1,4 @@
-<tool id="reformat_usearch_collapsed_fasta" name="Reformat USearch-Collapsed Fasta" version="0.0.0">
+<tool id="reformat_usearch_collapsed_fasta" name="Reformat USearch-Collapsed Fasta" version="0.0.1">
   <requirements>
     <requirement type="package" version="1.7.0">biopython</requirement>
   </requirements>
