@@ -9,10 +9,10 @@ Influenza viruses continually evolve to evade population immunity. We have devel
 Transforms fasta files of flu antigenic site amino acids into aggregated line lists, comparing antigenic maps to that of a reference sequence and collapsing and enumerating identical sequences.
 
 ## Antigenic Site Extraction
-Extracts antigenic amino acids from flu sequence, using a specific index array (i.e. for H3, H1 etc.).
+Extracts antigenic amino acids from influenza hemagglutinin (HA) sequences, using a flu type-specific array of amino acid positions to be extracted (i.e. for H3, H1 etc.), and outputs as a fasta file.
 
 ## Assign Clades
-Assign clade designations to influenza amino acid fasta files.
+Assigns clade designations to influenza HA amino acid fasta files.
 
 ## Change Fasta Deflines
 Renames definition lines in fasta files. Requires a fasta file requiring sequence name changes and a 2-column renaming file (either tab-delimited text or csv). Searches for fasta definition lines matching column 1 and, if found, replaces fasta definition line with string specified in column 2 of the renaming file.
