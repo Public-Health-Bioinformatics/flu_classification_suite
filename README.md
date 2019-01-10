@@ -29,3 +29,7 @@ Transforms fasta files of flu antigenic site amino acids into line lists, compar
 
 ## Reformat USearch-Collapsed Fasta
 Parses format of USearch-collapsed fasta output files and outputs fasta with customized definition line formatting.
+
+# Workflows
+
+## Assign clades and extract antigenic maps to csv
