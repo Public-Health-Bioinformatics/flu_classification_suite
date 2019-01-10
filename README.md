@@ -2,6 +2,13 @@
 Influenza viruses continually evolve to evade population immunity. We have developed a publicly-available Galaxy workflow Flu Analysis Suite, for rapid clade-mapping of sequenced influenza viruses. This suite provides rapid, high-resolution understanding of circulating influenza strain evolution to inform influenza vaccine effectiveness and the need for potential vaccine reformulation. 
 
 # Installation
+ 1. In the Galaxy Admin panel, select 'Install New Tools'
+ 2. Select the 'Galaxy Test Toolshed'
+ 3. Search for `flu_classification_suite`
+ 4. Click the button labeled `flu_classification_suite` and select 'Preview and install'
+ 5. Click 'Install to Galaxy'
+ 6. Select a tool panel section to install the tools under, or create a new section. We recommend creating a section called 'Flu Classification Suite'
+ 7. Click 'Install' 
 
 # Tools
 
