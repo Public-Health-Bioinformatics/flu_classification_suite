@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<repositories description="This requires the the flu_classification_suite.">
+  <repository name="flu_classification_suite" owner="public-health-bioinformatics" />
+</repositories>
+    
