@@ -3,7 +3,7 @@
     <requirement type="package" version="1.70">biopython</requirement>
   </requirements>
   <command detect_errors="exit_code"><![CDATA[
-    reformat_usearch_collapsed_fasta.py
+    python $__tool_directory__/reformat_usearch_collapsed_fasta.py
     '$input_fasta'
     '$output_file'
   ]]></command>
