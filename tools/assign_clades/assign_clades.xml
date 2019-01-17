@@ -3,7 +3,7 @@
     <requirement type="package" version="1.70">biopython</requirement>
   </requirements>
   <command detect_errors="exit_code"><![CDATA[
-    assign_clades.py
+    python $__tool_directory__/assign_clades.py
     '$input_fasta'
     '$clade_definitions'
     '$output_file'
