@@ -3,7 +3,7 @@
     <requirement type="package" version="1.70">biopython</requirement>
   </requirements>
   <command detect_errors="exit_code"><![CDATA[
-    antigenic_site_extraction.py
+    python $__tool_directory__/antigenic_site_extraction.py
     '$input_fasta'
     '$index_array'
     '$output_file'
