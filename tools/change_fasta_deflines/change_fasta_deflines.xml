@@ -3,7 +3,7 @@
     <requirement type="package" version="1.70">biopython</requirement>
   </requirements>
   <command detect_errors="exit_code"><![CDATA[
-    change_fasta_deflines.py
+    python $__tool_directory__/change_fasta_deflines.py
     '$key_value_pairs'
     '$input_fasta'
     '$output_file'
