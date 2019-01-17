@@ -3,7 +3,7 @@
     <requirement type="package" version="1.70">biopython</requirement>
   </requirements>
   <command detect_errors="exit_code"><![CDATA[
-    linelisting.py
+    python $__tool_directory__/linelisting.py
     '$input_fasta'
     '$ref_fasta'
     '$index_array_csv'
