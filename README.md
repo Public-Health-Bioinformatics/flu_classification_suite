@@ -52,7 +52,7 @@ Output - fasta, csv
 1.	Select the **Antigenic Site Extraction** tool
 2.	Select the fasta file with protein sequences to extract under **input_fasta**
 3.	Select the antigenic site index array file under **index_array** (*Note: The index array file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
-4.	Choose **Yes** to output results in csv format. (*Note: The default **No** selection outputs results in fasta*)
+4.	Choose **Yes** to output results in csv format (*Note: The default **No** selection outputs results in fasta*)
 5.	Execute the operation
 6.	Download the output file
 
