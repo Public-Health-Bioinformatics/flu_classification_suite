@@ -9,6 +9,19 @@ Influenza viruses continually evolve to evade population immunity. We have devel
  5. Click 'Install to Galaxy'
  6. Select a tool panel section to install the tools under, or create a new section. We recommend creating a section called 'Flu Classification Suite'
  7. Click 'Install' 
+ 
+# General How-To
+
+Task | Action
+------------ | -------------
+Upload a fasta file | <ul><li> Select **Get Data** from the **Tools** menu </li><li> Select **Upload File from your computer**</li><li> Drag the fasta file(s) into the window </li><li> Select **Start** to upload the file(s) </li><li> Select **Close** once each file's green progress bar reads 100% </li><li> Collapse the **Get Data** menu by selecting it </li></ul>	
+Upload a comma-separated value (csv) file | <ul><li> Select **Get Data** from the **Tools** menu </li><li> Select **Upload File from your computer** </li><li> Drag the csv file(s) into the window </li><li> Select "csv" under the **Type** column </li><li> Select **Start** to upload the file(s) </li><li> Select **Close** once each file's green progress bar reads 100% </li><li> Collapse the **Get Data** menu by selecting it </li></ul>
+View the contents of a file | <ul><li> Select the eye icon by the filename </li></ul>
+Remove a file | <ul><li> Select the pencil icon by the filename </li></ul>
+Download a file | <ul><li> Select the computer disk icon by the filename </li></ul>
+View the metadata of a file | <ul><li> Select the information icon by the filename </li></ul>
+Use an individual tool | <ul><li> Select the tool under **Flu Classification Suite** in the **Tools** pane </li><li> Input the required files </li><li>	Execute the operation </li><li>	Download the output file </li></ul>	
+Use a workflow | <ul><li> Select the workflow under **Flu Classification Suite** in the **Tools** pane </li><li> Input the required files </li><li> Select **Run workflow** to execute the operations </li><li> Wait for each workflow step to complete (highlighted in green) </li><li> Download or delete output files from each step as desired</li></ul>
 
 # Tools 
 Template files and sample input and output files can be found in the 'test-data' folder for each respective tool.
