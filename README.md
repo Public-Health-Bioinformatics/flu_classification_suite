@@ -20,8 +20,8 @@ View the contents of a file | <ul><li> Select the eye icon by the filename </li>
 Remove a file | <ul><li> Select the pencil icon by the filename </li></ul>
 Download a file | <ul><li> Select the computer disk icon by the filename </li></ul>
 View the metadata of a file | <ul><li> Select the information icon by the filename </li></ul>
-Use an individual tool | <ul><li> Select the tool under **Flu Classification Suite** in the **Tools** pane </li><li> Input the required files </li><li>	Execute the operation </li><li>	Download the output file </li></ul>	
-Use a workflow | <ul><li> Select the workflow under **Flu Classification Suite** in the **Tools** pane </li><li> Input the required files </li><li> Select **Run workflow** to execute the operations </li><li> Wait for each workflow step to complete (highlighted in green) </li><li> Download or delete output files from each step as desired</li></ul>
+Use an individual tool | <ul><li> Select the tool under **Flu Classification Suite** in the **Tools** pane </li><li> Input the required files </li><li>	Execute the operation </li></ul>	
+Use a workflow | <ul><li> Select the workflow under **Flu Classification Suite** in the **Tools** pane </li><li> Input the required files </li><li> Select **Run workflow** to execute the operations </li></ul>
 Determine if a tool is running | The operation will display as highlighted in grey while it is waiting to start on the server, as yellow during execution, and as green when complete
 
 # Tools 
@@ -66,7 +66,7 @@ Output - fasta
 2.	Select the fasta file containing the amino acid sequences under **input_fasta**
 3.	Select the clade definition file under **clade_definitions** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
 4.	Execute the operation
-5.	Download the fasta file with the clade-called sequences
+5.	Download the output file
 
 ## Change Fasta Deflines
 Renames definition lines in fasta files. Requires a fasta file requiring sequence name changes and a 2-column renaming file (either tab-delimited text or csv). Searches for fasta definition lines matching column 1 and, if found, replaces fasta definition line with string specified in column 2 of the renaming file.
@@ -107,3 +107,12 @@ While each tool could be selected from the “Flu Classification Suite” menu a
 ## Assign clades and extract antigenic maps to csv
 Input - Sequence files (fasta), clade definition file (csv), amino acid index array (csv)  
 Output - csv
+
+1.	Select the workflow **Assign clades and extract antigenic maps to csv**
+2.	Select whether to send the results to a new history (*Note: This is not required but facilitates convenient tracking and deletion of files within an analysis run*)
+3.	Select the clade definition file under **Clade Definitions** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
+4.	Select the index array under **Antigenic Amino Acid Index Array** (*Note: The index array file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
+5.	Select the fasta file to perform all operations as the **input_fasta** under **Assign Clades**
+6.	Select **Run workflow** to execute the operations
+7.	Wait for each workflow step to complete (*highlighted in green*)
+8. Download or delete output files from each step as desired
