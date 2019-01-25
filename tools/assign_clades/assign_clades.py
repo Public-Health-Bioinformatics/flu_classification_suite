@@ -27,8 +27,8 @@ cladeList = [] #empty list to hold clade tuples i.e. ("3C.3a", 1 ,{"3":"I", "9":
 '''Searches record for required amino acids at defined positions. If found, assigns
 clade name to sequence name by appending underscore and clade name to record id.'''
 def call_clade(record):
-    print "---------------------------------------------------------------------"
-    print "Parsing %s for matching flu clade definitions..." % (record.id)
+    print("---------------------------------------------------------------------")
+    print("Parsing %s for matching flu clade definitions..." % (record.id))
     matchList = [] #empty list to hold clades that match 100%
     #iterate over each tuple in the clade list
     for clade in cladeList:
@@ -87,11 +87,11 @@ with open (inFileHandle2, 'r') as clade_file:
         #add the clade info as a tuple to the cladeList[]
         oneClade =(name, depth, sites)
         cladeList.append(oneClade)
-    print "The List of Clades:"
+    print("The List of Clades:")
     for clade in cladeList:
-        print "Clade Name: %s Depth: %i Antigenic Sites: %i" % (clade[0], clade[1], len(clade[2]))
+        print("Clade Name: %s Depth: %i Antigenic Sites: %i" % (clade[0], clade[1], len(clade[2])))
         for pos, aa in clade[2].iteritems():
-            print "Pos: %s\tAA: %s" % (pos,aa)
+            print("Pos: %s\tAA: %s" % (pos,aa))
 
 '''opens readable input file of sequences to parse using filename from cmd line,
     instantiates as AA Sequence objects, with ppercase sequences'''
@@ -100,7 +100,7 @@ with open(inFileHandle1,'r') as inFile:
     for record in SeqIO.parse(inFile, "fasta", alphabet=IUPAC.protein):
         record = record.upper()
         seqList.append(record) #add Seq to list of Sequences
-    print "\n%i flu HA sequences will be compared to current clade definitions..." % len(seqList)
+    print("\n%i flu HA sequences will be compared to current clade definitions..." % len(seqList))
     #parse each target sequence object
     for record in seqList:
         clade_call = '' #empty variale for final clade call on sequence
@@ -116,10 +116,10 @@ with open(inFileHandle1,'r') as inFile:
         #empty list return, no matches
         else:
             clade_call = "No_Match"
-        print clade_call
+        print(clade_call)
         seq_name = record.id
         mod_name = seq_name + "_" + clade_call
-        print "New Sequence Name: " + mod_name
+        print("New Sequence Name: " + mod_name)
         record.id = mod_name
 
 
