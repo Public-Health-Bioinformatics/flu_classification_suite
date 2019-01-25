@@ -50,7 +50,7 @@ with open(args.inFileHandle2,'r') as inputFile2:
                 outfile.write(">" + newDefline + "\n")
             else:
                 #write out the original defline sequence name
-                print ("Defline not in dictionary: "), originalDefline
+                print("Defline not in dictionary: ", originalDefline)
                 outfile.write(">" + originalDefline + "\n")
         else:
         #in lines without ">", write out sequence as it was
