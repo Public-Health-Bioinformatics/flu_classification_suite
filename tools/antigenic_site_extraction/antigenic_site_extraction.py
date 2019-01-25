@@ -54,8 +54,8 @@ with open (args.inFileHandle2,'r') as inFile2:
     for item in positionList:
         indexArray.append(int(item))
     #print number of amino acids to extract and array to console as user check
-    print "Amino Acid positions to extract: %i " %(len(indexArray))
-    print indexArray
+    print("Amino Acid positions to extract: %i " %(len(indexArray)))
+    print(indexArray)
 
 with open(args.inFileHandle1,'r') as inFile:
     '''Open fasta of amino acid sequences to parse, uppercase and add to protein Sequence list.'''
@@ -64,14 +64,14 @@ with open(args.inFileHandle1,'r') as inFile:
         record = record.upper()
         seqList.append(record) #add Seq to list of Sequences
     #print number of sequences to be process as user check
-    print "\n%i flu sequences will be extracted for antigenic sites..." % len(seqList)
+    print("\n%i flu sequences will be extracted for antigenic sites..." % len(seqList))
     #parse each target sequence object
     for record in seqList:
         extract_aa_from_sequence(record)
 
 #print original and extracted sequence
 for x in range(0, len(seqList)):
-    print "Original %s: %i amino acids,\tExtracted: %i" % (seqList[x].id,len(seqList[x]),len(extractedSeqList[x]))
+    print("Original %s: %i amino acids,\tExtracted: %i" % (seqList[x].id,len(seqList[x]),len(extractedSeqList[x])))
 
 #determine if output format is fasta (default) or csv
 if args.csv:
@@ -82,7 +82,7 @@ if args.csv:
         sequence = str(record.seq).strip()
         csv_seq = ",".join(sequence)
         comma_separated_sequence = name_part + csv_seq + "\n"
-        print comma_separated_sequence
+        print(comma_separated_sequence)
         outFile.write(comma_separated_sequence)
 else:
     #write fasta file of extracted antigenic sites

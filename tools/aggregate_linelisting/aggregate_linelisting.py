@@ -160,7 +160,7 @@ def output_aggregated_linelist(a_list):
         #write first member of unique sequence list to csv
         agg_lineListFile.write(comma_sep_output)
         #print sequence records in sequevar to console
-        print "\n\t\t%i SeqRecords matching Sequevar: %s" % (len(listOfSeqs), u)
+        print("\n\t\t%i SeqRecords matching Sequevar: %s" % (len(listOfSeqs), u))
 
         #to uncollapse sequevar group, print each member of the sequevar list to csv output
         '''for i in range(1,len(listOfSeqs)):
@@ -214,7 +214,7 @@ with open (refAntigenicMap,'r') as refMapFile:
     #print column headers for sample sequences
     row4 = "Sequence Name,N,Clade,Extra Substitutions," + empty_indicesLine + "Number of Amino Acid Substitutions in Antigenic Sites,% Identity of Antigenic Site Residues\n"
     agg_lineListFile.write(row4)
-    print ("\nREFERENCE ANTIGENIC MAP: '%s' (%i amino acids)" % (record.id, len(record)))
+    print("\nREFERENCE ANTIGENIC MAP: '%s' (%i amino acids)" % (record.id, len(record)))
 
 with open(cladeDefinitionFile,'r') as cladeFile:
     """Read clade definition file and store clade names in list."""
@@ -232,14 +232,14 @@ with open(inputAntigenicMaps,'r') as extrAntigMapFile:
         seqList.append(record) #add Seq to list of Sequences
 
 #print number of sequences to be processed as user check
-print "\nCOMPARING %i flu antigenic map sequences to the reference..." % len(seqList)
+print("\nCOMPARING %i flu antigenic map sequences to the reference..." % len(seqList))
 for record in seqList:
     #assign SeqRecords to province-specific dictionaries
     sort_by_location(record)
 
 #access prov segregated lists in order
 sorted_prov_keys = sorted(prov_lists.keys())
-print "\nSequence Lists Sorted by Province: "
+print("\nSequence Lists Sorted by Province: ")
 for prov in sorted_prov_keys:
     current_list = prov_lists[prov]
     #mask AA's identical to reference sequence with dot
@@ -253,7 +253,7 @@ for prov in sorted_prov_keys:
 for prov in sorted_prov_keys:
     prov_list = prov_lists[prov]
     by_clades_dict = {} #empty dict for clade:seqRecord list groups
-    print "\n'%s' List (Amino Acids identical to Reference are Masked): " % (prov)
+    print("\n'%s' List (Amino Acids identical to Reference are Masked): " % (prov))
     for rec in prov_list:
         clade = extract_clade(rec)
         if clade in by_clades_dict:
@@ -263,13 +263,13 @@ for prov in sorted_prov_keys:
             by_clades_dict[clade] = [rec]
     #get list of alphabetically sorted clade keys
     sorted_clade_keys = sorted(by_clades_dict.keys())
-    print "\tNumber of clades: ", len(by_clades_dict)
+    print("\tNumber of clades: ", len(by_clades_dict))
     #group each list of sequences in clade by sequevars
     for key in sorted_clade_keys:
-        print "\n\tCLADE: %s Number of Members: %i" % (key, len(by_clades_dict[key]))
+        print("\n\tCLADE: %s Number of Members: %i" % (key, len(by_clades_dict[key])))
         a_list = by_clades_dict[key]
         for seqrec in a_list:
-            print "\t %s: %s" %(seqrec.id,str(seqrec.seq))
+            print("\t %s: %s" %(seqrec.id,str(seqrec.seq)))
         #output the list to csv as aggregated linelist
         output_aggregated_linelist(a_list)
     

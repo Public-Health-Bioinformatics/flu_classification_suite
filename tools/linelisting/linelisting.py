@@ -172,7 +172,7 @@ with open (refAntigenicMap,'r') as refMapFile:
     #print column headers for sample sequences
     row4 = "Sequence Name,N,Clade,Extra Substitutions," + empty_indicesLine + "Number of Amino Acid Substitutions in Antigenic Sites,% Identity of Antigenic Site Residues\n"
     lineListFile.write(row4)
-    print ("\nREFERENCE ANTIGENIC MAP: '%s' (%i amino acids)" % (record.id, len(record)))
+    print("\nREFERENCE ANTIGENIC MAP: '%s' (%i amino acids)" % (record.id, len(record)))
 
 with open(cladeDefinitionFile,'r') as cladeFile:
     """Read clade definition file and store clade names in a list."""
@@ -190,14 +190,14 @@ with open(inputAntigenicMaps,'r') as extrAntigMapFile:
         seqList.append(record) #add Seq to list of Sequences
 
 #print number of sequences to be process as user check
-print "\nCOMPARING %i flu antigenic map sequences to the reference..." % len(seqList)
+print("\nCOMPARING %i flu antigenic map sequences to the reference..." % len(seqList))
 #parse each antigenic map sequence object
 for record in seqList:
     #assign Sequence to dictionaries according to location in name
     sort_by_location(record)
 #sort dictionary keys that access province-segregated lists
 sorted_segregated_list_keys = sorted(segregated_lists.keys())
-print "\nSequence Lists Sorted by Province: "
+print("\nSequence Lists Sorted by Province: ")
 #process each province-segregated SeqRecord list
 for listname in sorted_segregated_list_keys:
     #acesss list of sequences by the listname key
@@ -210,7 +210,7 @@ for listname in sorted_segregated_list_keys:
         rec = replace_matching_aa_with_dot(record)
         mod_list.append(rec) #populate a list of modified records
     segregated_lists[listname] =  mod_list
-    print "\n'%s' List (Amino Acids identical to Reference Masked): " % (listname)
+    print("\n'%s' List (Amino Acids identical to Reference Masked): " % (listname))
     #output the list to csv as non-aggregated linelist
     output_linelist(segregated_lists[listname])
 
