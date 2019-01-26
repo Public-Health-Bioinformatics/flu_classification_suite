@@ -42,7 +42,7 @@ with open(args.inFileHandle2,'r') as inputFile2:
         if ">" in line:
             originalDefline = line.rstrip().replace(">","",1)
             #check for a match to any of the dict key
-            if dict.has_key(originalDefline):
+            if originalDefline in dict:
                 #find the index of that item in the list
                 newDefline= dict[originalDefline]
                 #print("the new name"), newDefline
