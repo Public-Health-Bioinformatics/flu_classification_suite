@@ -21,7 +21,7 @@
   </outputs>
   <tests>
     <test>
-      <param name="input_fasta" value="2017_summer_Nov23_2017_antigenic_maps.fasta"/>
+      <param name="input_fasta" value="fluA_H3_clade_assigned_antigenic_sites_extracted.fasta"/>
       <param name="ref_fasta" value="MAP_3C.2a_A_Hong_Kong_4801_2014_X-263B_EGG.fasta" />
       <param name="index_array_csv" value="FluA_H3_antigenic_aa_indices.csv" />
       <param name="clade_def_csv" value="Flu_Clade_Definitions_H3_20171121.csv" />
