@@ -38,7 +38,7 @@ def call_clade(record):
         shouldFind = len(sites) #number of sites that should match
         found = 0 #a counter to hold matches to antigenic sites
         #iterate over each position in sites dictionary
-        for pos, aa in sites.iteritems():
+        for pos, aa in sites.items():
             #translate pos to corresponding index in target sequence
             index = int(pos) - 1
             #if record at index has same amino acid as 'aa', increment 'found'
@@ -90,7 +90,7 @@ with open (inFileHandle2, 'r') as clade_file:
     print("The List of Clades:")
     for clade in cladeList:
         print("Clade Name: %s Depth: %i Antigenic Sites: %i" % (clade[0], clade[1], len(clade[2])))
-        for pos, aa in clade[2].iteritems():
+        for pos, aa in clade[2].items():
             print("Pos: %s\tAA: %s" % (pos,aa))
 
 '''opens readable input file of sequences to parse using filename from cmd line,
