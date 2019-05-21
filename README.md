@@ -1,5 +1,5 @@
-# Flu Classification Suite
-Influenza viruses continually evolve to evade population immunity. We have developed a publicly-available Galaxy workflow Flu Classification Suite, for rapid clade-mapping of sequenced influenza viruses. This suite provides rapid, high-resolution understanding of circulating influenza strain evolution to inform influenza vaccine effectiveness and the need for potential vaccine reformulation. 
+# Influenza Classification Suite
+Influenza viruses continually evolve to evade population immunity. We have developed a publicly-available Galaxy workflow Influenza Classification Suite, for rapid clade-mapping of sequenced influenza viruses. This suite provides rapid, high-resolution understanding of circulating influenza strain evolution to inform influenza vaccine effectiveness and the need for potential vaccine reformulation. 
 
 # Installation
  1. In the Galaxy Admin panel, select 'Install New Tools'
@@ -7,7 +7,7 @@ Influenza viruses continually evolve to evade population immunity. We have devel
  3. Search for `flu_classification_suite`
  4. Click the button labeled `flu_classification_suite` and select 'Preview and install'
  5. Click 'Install to Galaxy'
- 6. Select a tool panel section to install the tools under, or create a new section. We recommend creating a section called 'Flu Classification Suite'
+ 6. Select a tool panel section to install the tools under, or create a new section. We recommend creating a section called 'Influenza Classification Suite'
  7. Click 'Install' 
  
 # General How-To
@@ -27,7 +27,7 @@ Determine if a tool is running | The operation will display as highlighted in gr
 # Tools 
 Template files and sample input and output files can be found in the 'test-data' folder for each respective tool.
 
-Each tool can be selected from the “Flu Classification Suite” menu and used individually or chained together to create a workflow. 
+Each tool can be selected from the “Influenza Classification Suite” menu and used individually or chained together to create a workflow. 
 
 ## Aggregate Line List
 Transforms fasta files of flu antigenic site amino acids into aggregated line lists, comparing antigenic maps to that of a reference sequence and collapsing and enumerating identical sequences.
@@ -102,7 +102,7 @@ Output - csv
 Parses format of USearch-collapsed fasta output files and outputs fasta with customized definition line formatting.
 
 # Workflows
-While each tool could be selected from the “Flu Classification Suite” menu and used individually, a workflow was created by chaining tools in a pipeline to automate a series of tasks in a standardized, user-friendly manner.
+While each tool could be selected from the “Influenza Classification Suite” menu and used individually, a workflow was created by chaining tools in a pipeline to automate a series of tasks in a standardized, user-friendly manner.
 
 ## Assign clades and extract antigenic maps to csv
 Input - Sequence files (fasta), clade definition file (csv), amino acid index array (csv)  
