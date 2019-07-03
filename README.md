@@ -133,3 +133,19 @@ Output - csv
 7.	Select **Run workflow** to execute the operations
 8.	Wait for each workflow step to complete (*highlighted in green*)
 9. Download or delete output files from each step as desired
+
+
+## Assign clades, extract antigenic maps and output to aggregated line list
+Input - Sequence files (fasta), reference antigenic map (e.g. vaccine influenza strain) (fasta), clade definition file (csv), amino acid index array (csv) (*Note: Use the provided reference antigenic map, clade definition and amino acid index array files or provide your own respective versions of these files*)
+
+Output - csv
+
+1.	Select the workflow **Assign clades, extract antigenic maps and output to aggregated line list**
+2.	Select whether to send the results to a new history (*Note: This is not required but facilitates convenient tracking and deletion of files within an analysis run*)
+3.	Select the clade definition file under **Clade Definitions** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
+4.	Select the index array under **Antigenic Amino Acid Index Array** (*Note: The index array file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
+5.	Select the reference antigenic map under **Reference Antigenic Map** (*Note: The reference antigenic map file must be the extracted antigenic site amino acids in fasta format and of the correct version for the respective flu type to obtain accurate results*)
+6. Select the fasta file to perform all operations as the **input_fasta** under **Assign Clades**
+7.	Select **Run workflow** to execute the operations
+8.	Wait for each workflow step to complete (*highlighted in green*)
+9. Download or delete output files from each step as desired
