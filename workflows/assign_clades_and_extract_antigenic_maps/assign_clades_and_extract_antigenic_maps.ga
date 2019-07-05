@@ -1,8 +1,8 @@
 {
-    "uuid": "dfc0627f-e845-4e7b-be69-428fc2756831",
+    "uuid": "889fa50c-12ce-467a-ace8-3971fe19ff74",
     "tags": [],
     "format-version": "0.1",
-    "name": "Assign clades and extract antigenic maps",
+    "name": "Assign clades and extract antigenic maps_2",
     "steps": {
         "0": {
             "tool_id": null,
@@ -24,8 +24,8 @@
             "label": "Clade Definitions",
             "inputs": [],
             "position": {
-                "top": 310.5,
-                "left": 205
+                "top": 267.5,
+                "left": 222
             },
             "annotation": "A csv file containing clade definitions.",
             "content_id": null,
@@ -51,15 +51,15 @@
             "label": "Antigenic Amino Acid Index Array",
             "inputs": [],
             "position": {
-                "top": 419.5,
-                "left": 204
+                "top": 353.5,
+                "left": 222
             },
             "annotation": "A csv file with the amino acid sites to extract, specific for the flu subtype.",
             "content_id": null,
             "type": "data_input"
         },
         "2": {
-            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/assign_clades/assign_clades/0.0.1",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/assign_clades/assign_clades/0.0.1",
             "tool_version": "0.0.1",
             "outputs": [
                 {
@@ -70,7 +70,7 @@
             "workflow_outputs": [
                 {
                     "output_name": "output_file",
-                    "uuid": "5113d405-54ae-4692-b548-dec61d42da77",
+                    "uuid": "8f418437-2c37-4786-88f5-1726bfdade68",
                     "label": null
                 }
             ],
@@ -84,11 +84,11 @@
             "id": 2,
             "tool_shed_repository": {
                 "owner": "public-health-bioinformatics",
-                "changeset_revision": "bb1cdfafee59",
+                "changeset_revision": "a971083404a4",
                 "name": "assign_clades",
-                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+                "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "uuid": "0d302bca-6cbf-4664-9840-f3c39bd2f1ef",
+            "uuid": "1dbe9c27-e6ed-43a1-9c3f-c12030092a87",
             "errors": null,
             "name": "Assign Clades",
             "post_job_actions": {},
@@ -104,15 +104,15 @@
                 }
             ],
             "position": {
-                "top": 308.5,
-                "left": 500
+                "top": 266.5,
+                "left": 469
             },
-            "annotation": "Appends clade names to fasta sequences.",
-            "content_id": "testtoolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/assign_clades/assign_clades/0.0.1",
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/assign_clades/assign_clades/0.0.1",
             "type": "tool"
         },
         "3": {
-            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/antigenic_site_extraction/antigenic_site_extraction/0.0.1",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/antigenic_site_extraction/antigenic_site_extraction/0.0.1",
             "tool_version": "0.0.1",
             "outputs": [
                 {
@@ -123,7 +123,7 @@
             "workflow_outputs": [
                 {
                     "output_name": "output_file",
-                    "uuid": "39dbd087-17c7-4a57-956b-147cb994b6e1",
+                    "uuid": "ad91741a-0d3a-4244-a7e4-859d5fa2286e",
                     "label": null
                 }
             ],
@@ -141,11 +141,11 @@
             "id": 3,
             "tool_shed_repository": {
                 "owner": "public-health-bioinformatics",
-                "changeset_revision": "f5522fa90c03",
+                "changeset_revision": "a1b46e339580",
                 "name": "antigenic_site_extraction",
-                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+                "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "uuid": "ae6e77bb-8ee1-4390-acf6-7b794c1676bd",
+            "uuid": "f035418a-4c24-42e2-a426-0a1e9376d47f",
             "errors": null,
             "name": "Antigenic Site Extraction",
             "post_job_actions": {},
@@ -161,11 +161,11 @@
                 }
             ],
             "position": {
-                "top": 482,
-                "left": 475.5
+                "top": 441.5,
+                "left": 451.5
             },
-            "annotation": "Extracts antigenic sites to fasta (default) or csv (by selecting csv output option).",
-            "content_id": "testtoolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/antigenic_site_extraction/antigenic_site_extraction/0.0.1",
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/antigenic_site_extraction/antigenic_site_extraction/0.0.1",
             "type": "tool"
         }
     },
