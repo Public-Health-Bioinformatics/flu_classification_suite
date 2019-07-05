@@ -1,14 +1,20 @@
 {
-    "uuid": "0b037e49-c525-4383-b0d5-fe00a1375eb5",
+    "uuid": "0518985f-061c-42b8-ae8e-da3c04025c25",
     "tags": [],
     "format-version": "0.1",
-    "name": "Assign clades, extract antigenic maps and output to aggregated line list. (imported from uploaded file)",
+    "name": "Assign clades, extract antigenic maps, output to aggregated line list_2",
     "steps": {
         "0": {
             "tool_id": null,
             "tool_version": null,
             "outputs": [],
-            "workflow_outputs": [],
+            "workflow_outputs": [
+                {
+                    "output_name": "output",
+                    "uuid": "1a9eeb48-37a5-4233-bb69-08a37da9ec3e",
+                    "label": null
+                }
+            ],
             "input_connections": {},
             "tool_state": "{}",
             "id": 0,
@@ -18,8 +24,8 @@
             "label": "Clade Definitions",
             "inputs": [],
             "position": {
-                "top": 118.96875,
-                "left": 271.046875
+                "top": 311.46875,
+                "left": 294.046875
             },
             "annotation": "A csv file containing the respective clade definitions (e.g Flu_Clade_Definitions_H3_20171107.csv).",
             "content_id": null,
@@ -29,7 +35,13 @@
             "tool_id": null,
             "tool_version": null,
             "outputs": [],
-            "workflow_outputs": [],
+            "workflow_outputs": [
+                {
+                    "output_name": "output",
+                    "uuid": "ec0fdf51-01e1-4b73-a558-922072539e8b",
+                    "label": null
+                }
+            ],
             "input_connections": {},
             "tool_state": "{}",
             "id": 1,
@@ -39,8 +51,8 @@
             "label": "Antigenic Amino Acid Index Array",
             "inputs": [],
             "position": {
-                "top": 215.96875,
-                "left": 284.03125
+                "top": 400.46875,
+                "left": 294.03125
             },
             "annotation": "A csv file with the amino acid sites to extract, specific for the flu subtype (e.g. FluA_H3_antigenic_aa_indices.csv).",
             "content_id": null,
@@ -50,7 +62,13 @@
             "tool_id": null,
             "tool_version": null,
             "outputs": [],
-            "workflow_outputs": [],
+            "workflow_outputs": [
+                {
+                    "output_name": "output",
+                    "uuid": "59eea4ba-bcbf-4f40-90f0-69d07a52cfbd",
+                    "label": null
+                }
+            ],
             "input_connections": {},
             "tool_state": "{}",
             "id": 2,
@@ -60,7 +78,7 @@
             "label": "Reference Antigenic Map",
             "inputs": [],
             "position": {
-                "top": 324.953125,
+                "top": 517.453125,
                 "left": 289
             },
             "annotation": "A fasta file containing the reference antigenic map (i.e. extracted antigenic sites from the reference sequence).",
@@ -68,7 +86,7 @@
             "type": "data_input"
         },
         "3": {
-            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/assign_clades/assign_clades/0.0.1",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/assign_clades/assign_clades/0.0.1",
             "tool_version": "0.0.1",
             "outputs": [
                 {
@@ -79,7 +97,7 @@
             "workflow_outputs": [
                 {
                     "output_name": "output_file",
-                    "uuid": "f2b750b5-0a5c-444e-85c0-0faa281a3ea4",
+                    "uuid": "5cf95101-71b2-438b-bdba-b41cb28fc7b5",
                     "label": null
                 }
             ],
@@ -89,30 +107,39 @@
                     "id": 0
                 }
             },
-            "tool_state": "{\"input_fasta\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 95}]}\", \"__rerun_remap_job_id__\": null, \"clade_definitions\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 96}]}\", \"__page__\": null}",
+            "tool_state": "{\"input_fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"clade_definitions\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null}",
             "id": 3,
             "tool_shed_repository": {
                 "owner": "public-health-bioinformatics",
-                "changeset_revision": "bb1cdfafee59",
+                "changeset_revision": "a971083404a4",
                 "name": "assign_clades",
-                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+                "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "uuid": "333944cc-8604-4566-8b04-914f3ca3b152",
+            "uuid": "b688bb73-f762-47ff-b6bf-ce3767042494",
             "errors": null,
             "name": "Assign Clades",
             "post_job_actions": {},
             "label": null,
-            "inputs": [],
+            "inputs": [
+                {
+                    "name": "input_fasta",
+                    "description": "runtime parameter for tool Assign Clades"
+                },
+                {
+                    "name": "clade_definitions",
+                    "description": "runtime parameter for tool Assign Clades"
+                }
+            ],
             "position": {
-                "top": 119.5,
-                "left": 513.0625
+                "top": 298,
+                "left": 525
             },
             "annotation": "",
-            "content_id": "testtoolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/assign_clades/assign_clades/0.0.1",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/assign_clades/assign_clades/0.0.1",
             "type": "tool"
         },
         "4": {
-            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/antigenic_site_extraction/antigenic_site_extraction/0.0.1",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/antigenic_site_extraction/antigenic_site_extraction/0.0.1",
             "tool_version": "0.0.1",
             "outputs": [
                 {
@@ -123,7 +150,7 @@
             "workflow_outputs": [
                 {
                     "output_name": "output_file",
-                    "uuid": "a25472b5-bbc5-47e1-83f5-f07eca47ea07",
+                    "uuid": "6eee9b87-b160-456c-896b-cbba181a7ff2",
                     "label": null
                 }
             ],
@@ -137,30 +164,39 @@
                     "id": 1
                 }
             },
-            "tool_state": "{\"input_fasta\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 95}]}\", \"__rerun_remap_job_id__\": null, \"csv\": \"\\\"false\\\"\", \"index_array\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 96}]}\", \"__page__\": null}",
+            "tool_state": "{\"input_fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"csv\": \"\\\"false\\\"\", \"index_array\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null}",
             "id": 4,
             "tool_shed_repository": {
                 "owner": "public-health-bioinformatics",
-                "changeset_revision": "f5522fa90c03",
+                "changeset_revision": "a1b46e339580",
                 "name": "antigenic_site_extraction",
-                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+                "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "uuid": "476e3f5a-b5b9-4e59-af47-d826b21629fc",
+            "uuid": "af238056-76fa-4028-a90d-de89d30c88ec",
             "errors": null,
             "name": "Antigenic Site Extraction",
             "post_job_actions": {},
-            "label": null,
-            "inputs": [],
+            "label": "Extract antigenic sites.",
+            "inputs": [
+                {
+                    "name": "input_fasta",
+                    "description": "runtime parameter for tool Antigenic Site Extraction"
+                },
+                {
+                    "name": "index_array",
+                    "description": "runtime parameter for tool Antigenic Site Extraction"
+                }
+            ],
             "position": {
-                "top": 282.5,
-                "left": 517.5625
+                "top": 459,
+                "left": 519.5
             },
             "annotation": "",
-            "content_id": "testtoolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/antigenic_site_extraction/antigenic_site_extraction/0.0.1",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/antigenic_site_extraction/antigenic_site_extraction/0.0.1",
             "type": "tool"
         },
         "5": {
-            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/aggregate_linelisting/aggregate_linelisting/0.0.1",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/aggregate_linelisting/aggregate_linelisting/0.0.1",
             "tool_version": "0.0.1",
             "outputs": [
                 {
@@ -171,7 +207,7 @@
             "workflow_outputs": [
                 {
                     "output_name": "output_file",
-                    "uuid": "19f9748a-2178-4db0-aaac-25c4556b3725",
+                    "uuid": "6df87d98-0154-405a-82d1-b5b0f473bf09",
                     "label": null
                 }
             ],
@@ -193,26 +229,43 @@
                     "id": 0
                 }
             },
-            "tool_state": "{\"__page__\": null, \"ref_fasta\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 95}]}\", \"input_fasta\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 95}]}\", \"__rerun_remap_job_id__\": null, \"clade_def_csv\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 96}]}\", \"index_array_csv\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 96}]}\"}",
+            "tool_state": "{\"__page__\": null, \"ref_fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input_fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"clade_def_csv\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"index_array_csv\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
             "id": 5,
             "tool_shed_repository": {
                 "owner": "public-health-bioinformatics",
-                "changeset_revision": "45a01281f796",
+                "changeset_revision": "515c0c885f5d",
                 "name": "aggregate_linelisting",
-                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+                "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "uuid": "7f9110c5-5031-49c1-8c67-12627f086d4c",
+            "uuid": "0a33caa6-4b7b-40a9-a7e5-5a9262f85d6d",
             "errors": null,
             "name": "Aggregate Line List",
             "post_job_actions": {},
-            "label": null,
-            "inputs": [],
+            "label": "Output aggregated line list.",
+            "inputs": [
+                {
+                    "name": "input_fasta",
+                    "description": "runtime parameter for tool Aggregate Line List"
+                },
+                {
+                    "name": "index_array_csv",
+                    "description": "runtime parameter for tool Aggregate Line List"
+                },
+                {
+                    "name": "ref_fasta",
+                    "description": "runtime parameter for tool Aggregate Line List"
+                },
+                {
+                    "name": "clade_def_csv",
+                    "description": "runtime parameter for tool Aggregate Line List"
+                }
+            ],
             "position": {
-                "top": 432.5,
-                "left": 521.0625
+                "top": 613,
+                "left": 524
             },
             "annotation": "",
-            "content_id": "testtoolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/aggregate_linelisting/aggregate_linelisting/0.0.1",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/public-health-bioinformatics/aggregate_linelisting/aggregate_linelisting/0.0.1",
             "type": "tool"
         }
     },
