@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<repositories description="This requires the the flu_classification_suite.">
+  <repository name="assign_clades" owner="public-health-bioinformatics" />
+  <repository name="antigenic_site_extraction" owner="public-health-bioinformatics" />
+  <repository name="linelisting" owner="public-health-bioinformatics" />
+</repositories>
+    
