@@ -112,14 +112,11 @@ Transforms fasta files of flu antigenic site amino acids into line lists, compar
 6.	Execute the operation
 7.	Download the output file
 
-
 ## Reformat USearch-Collapsed Fasta
 Parses format of USearch-collapsed fasta output files and outputs fasta with customized definition line formatting.
 
-**Input** - USearch output (fasta)
+**Input** - USearch output(fasta)
 **Output** - fasta with custom-formatted definition lines
-Input - Antigenic Site Extraction output (fasta), amino acid index array (csv), clade definition file (csv)
-Output - csv
 
 # Workflows
 While each tool could be selected from the “Influenza Classification Suite” menu and used individually, a workflow was created by chaining tools in a pipeline to automate a series of tasks in a standardized, user-friendly manner.
