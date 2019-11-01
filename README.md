@@ -12,6 +12,9 @@ Influenza viruses continually evolve to evade population immunity. We have devel
     * [Line List](#line-list)
     * [Reformat USearch-Collapsed Fasta](#reformat-usearch-collapsed-fasta)
  * [Workflows](#workflows)
+    * [Assign clades and extract antigenic maps](#assign-clades-and-extract-antigenic-maps)
+    * [Assign clades, extract antigenic maps and output to line list](#assign-clades,-extract-antigenic-maps-and-output-to-line-list)
+    * [Assign clades, extract antigenic maps and output to aggregated line list](#assign-clades,-extract-antigenic-maps-and-output-to-aggregated-line-list)
  
 # Installation
  1. In the Galaxy Admin panel, select 'Install New Tools'
