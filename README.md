@@ -4,6 +4,8 @@ Influenza viruses continually evolve to evade population immunity. We have devel
 # Table of Contents
  * [Installation](#installation)
  * [General How-To](#general-how-to)
+ * [Tools](#tools)
+ * [Workflows](#workflows)
  
 # Installation
  1. In the Galaxy Admin panel, select 'Install New Tools'
