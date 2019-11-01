@@ -1,6 +1,10 @@
 # Influenza Classification Suite
 Influenza viruses continually evolve to evade population immunity. We have developed a publicly-available Galaxy workflow Influenza Classification Suite, for rapid clade-mapping of sequenced influenza viruses. This suite provides rapid, high-resolution understanding of circulating influenza strain evolution to inform influenza vaccine effectiveness and the need for potential vaccine reformulation. 
 
+# Table of Contents
+ * [Installation](#installation)
+ * [General How-To](#general-how-to)
+ 
 # Installation
  1. In the Galaxy Admin panel, select 'Install New Tools'
  2. Select the 'Galaxy Test Toolshed'
