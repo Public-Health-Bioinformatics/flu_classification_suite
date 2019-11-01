@@ -86,6 +86,8 @@ Assigns clade designations to influenza HA amino acid fasta files.
 ## Change Fasta Deflines
 Renames definition lines in fasta files. Requires a fasta file requiring sequence name changes and a 2-column renaming file (either tab-delimited text or csv). Searches for fasta definition lines matching column 1 and, if found, replaces fasta definition line with string specified in column 2 of the renaming file.
 
+**Input** - Sequence files (fasta), clade definition file (csv)  
+**Output** - fasta
 **Input** - Sequence file to be renamed (fasta), 2-column renaming file (txt or csv)  
 **Output** - fasta
 
