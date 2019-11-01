@@ -4,18 +4,6 @@ Influenza viruses continually evolve to evade population immunity. We have devel
 # Table of Contents
  * [Installation](#installation)
  * [General How-To](#general-how-to)
-    * [TEST:Upload a fasta file](#action##select-the-eye-icon-by-the-filename)
-    * [Upload a fasta file](#upload-a-fasta-file)
-    * [Upload a comma-separated value (csv) file](#upload-a-comma-separated-value-csv-file)
-    * [View the contents of a file](#view-the-contents-of-a-file)
-    * [Remove a file](#remove-a-file)
-    * [Download a file](#download-a-file)
-    * [View the metadata of a file](#view-the-metadata-of-a-file)
-    * [Use an individual tool](#use-an-individual-tool)
-    * [Use a workflow](#use-a-workflow)
-    * [Download a file](#download-a-file)
-    * [Determine if a tool is running](#determine-if-a-tool-is-running)
- 
  * [Tools](#tools)
     * [Aggregate Line List](#aggregate-line-list)
     * [Antigenic Site Extraction](#antigenic-site-extraction)
