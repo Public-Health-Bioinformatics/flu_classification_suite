@@ -4,6 +4,7 @@ Influenza viruses continually evolve to evade population immunity. We have devel
 # Table of Contents
  * [Installation](#installation)
  * [General How-To](#general-how-to)
+    * [TEST:Upload a fasta file](#general-how-to)
     * [Upload a fasta file](#upload-a-fasta-file)
     * [Upload a comma-separated value (csv) file](#upload-a-comma-separated-value-csv-file)
     * [View the contents of a file](#view-the-contents-of-a-file)
