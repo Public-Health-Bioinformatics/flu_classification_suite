@@ -5,12 +5,12 @@ Influenza viruses continually evolve to evade population immunity. We have devel
  * [Installation](#installation)
  * [General How-To](#general-how-to)
  * [Tools](#tools)
-   *[Aggregate Line List](#aggregate-line-list)
-   *[Antigenic Site Extraction](#antigenic-site-extraction)
-   *[Assign Clades](#assign-clades)
-   *[Change Fasta Deflines](#change-fasta-deflines)
-   *[Line List](#line-list)
-   *[Reformat USearch-Collapsed Fasta](#reformat-usearch-collapsed-fasta)
+    *[Aggregate Line List] (#aggregate-line-list)
+    *[Antigenic Site Extraction](#antigenic-site-extraction)
+    *[Assign Clades](#assign-clades)
+    *[Change Fasta Deflines](#change-fasta-deflines)
+    *[Line List](#line-list)
+    *[Reformat USearch-Collapsed Fasta](#reformat-usearch-collapsed-fasta)
  * [Workflows](#workflows)
  
 # Installation
