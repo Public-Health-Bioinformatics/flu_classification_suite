@@ -86,8 +86,6 @@ Assigns clade designations to influenza HA amino acid fasta files.
 ## Change Fasta Deflines
 Renames definition lines in fasta files. Requires a fasta file requiring sequence name changes and a 2-column renaming file (either tab-delimited text or csv). Searches for fasta definition lines matching column 1 and, if found, replaces fasta definition line with string specified in column 2 of the renaming file.
 
-**Input** - Sequence files (fasta), clade definition file (csv)  
-**Output** - fasta
 **Input** - Sequence file to be renamed (fasta), 2-column renaming file (txt or csv)  
 **Output** - fasta
 
@@ -116,7 +114,8 @@ Transforms fasta files of flu antigenic site amino acids into line lists, compar
 
 ## Reformat USearch-Collapsed Fasta
 Parses format of USearch-collapsed fasta output files and outputs fasta with customized definition line formatting.
-
+**Input** - Sequence files (fasta), clade definition file (csv)  
+**Output** - fasta
 **Input** - USearch output(fasta)
 **Output** - fasta with custom-formatted definition lines
 
