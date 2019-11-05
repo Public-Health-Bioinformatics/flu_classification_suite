@@ -5,11 +5,11 @@ Influenza viruses continually evolve to evade population immunity. We have devel
  * [Installation](#installation)
  * [General How-To](#general-how-to)
  * [Tools](#tools)
-    * [Aggregate Line List](#aggregate-line-list)
-    * [Antigenic Site Extraction](#antigenic-site-extraction)
-    * [Assign Clades](#assign-clades)
     * [Change Fasta Deflines](#change-fasta-deflines)
+    * [Assign Clades](#assign-clades)
+    * [Antigenic Site Extraction](#antigenic-site-extraction)
     * [Line List](#line-list)
+    * [Aggregate Line List](#aggregate-line-list)
     * [Reformat USearch-Collapsed Fasta](#reformat-usearch-collapsed-fasta)
  * [Workflows](#workflows)
     * [Assign clades and extract antigenic maps](#assign-clades-and-extract-antigenic-maps)
@@ -39,7 +39,7 @@ Use an individual tool | <ul><li> Select the tool under **Flu Classification Sui
 Use a workflow | <ul><li> Select the workflow under **Flu Classification Suite** in the **Tools** pane </li><li> Input the required files </li><li> Select **Run workflow** to execute the operations </li></ul>
 Determine if a tool is running | The operation will display as highlighted in grey while it is waiting to start on the server, as yellow during execution, and as green when complete
 
-# Tools 
+# Tools (in order of use)
 Template files and sample input and output files can be found in the 'test-data' folder for each respective tool.
 
 Each tool can be selected from the “Influenza Classification Suite” menu and used individually or chained together to create a workflow. 
