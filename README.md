@@ -96,12 +96,14 @@ Assigns clade designations to influenza HA amino acid fasta files.
 ![](doc/images/assign_clades-fasta_file_after_assigning_clades.png)
 
 ## Change Fasta Deflines
-Renames definition lines in fasta files. Requires a fasta file requiring sequence name changes and a 2-column renaming file (either tab-delimited text or csv). Searches for fasta definition lines matching column 1 and, if found, replaces fasta definition line with string specified in column 2 of the renaming file.
+Renames definition lines in fasta files. Requires a fasta file requiring sequence name changes and a 2-column renaming file (either [tab-delimited text](doc/images/change_fasta_deflines-tsv_renaming-file.tsv) or [csv](doc/images/change_fasta_deflines-csv_renaming-file.csv)). Searches for fasta definition lines matching column 1 and, if found, replaces fasta definition line with string specified in column 2 of the renaming file.
+
+![](doc/images/change-fasta-deflines-tool-usage-with-csv.png)
 
 **Input** - Sequence file to be renamed (fasta), 2-column renaming file (txt or csv)  
 **Output** - fasta
 
-1. Create a renaming file in Excel with current sequence names in column 1 and desired names in column 2 and export in csv or tab-delimited text format
+1. Create a renaming file in Excel with current sequence names in column 1 and desired names in column 2 and export in [csv](doc/images/change-fasta-deflines-csv-seq-rename-file.png) or [tsv](doc/images/change-fasta-deflines-tsv-seq-rename-file.png) format
 2. Upload this file into Galaxy
 3. *If the renaming file is tab-delimited text, select the pencil icon beside the file name, select datatypes, and ensure the datatype displayed is "csv"*
 4. Select the **Change Fasta Deflines** tool
@@ -109,6 +111,8 @@ Renames definition lines in fasta files. Requires a fasta file requiring sequenc
 6.	Choose a renaming file under the **“key_value_pairs”** parameter
 7.	Select **Yes/No** under the **“Names file is tab-delimited”** (*Note: The default renaming file format is csv and the default selection is set to “No”*)
 8.	Press **Execute** to start the operation
+
+![](doc/images/change_fasta_deflines-fasta_file_after_changing_definition_lines.png)
 
 ## Line List
 Transforms fasta files of flu antigenic site amino acids into line lists, comparing antigenic maps to that of a reference sequence.
