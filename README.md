@@ -82,6 +82,8 @@ Extracts antigenic amino acids from influenza hemagglutinin (HA) sequences, usin
 ## Assign Clades
 Assigns clade designations to influenza HA amino acid fasta files.
 
+![](doc/images/assign_clades-tool_image.png)
+
 **Input** - Sequence files (fasta), clade definition file (csv)  
 **Output** - fasta
 
@@ -90,6 +92,8 @@ Assigns clade designations to influenza HA amino acid fasta files.
 3.	Select the clade definition file under **clade_definitions** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
 4.	Execute the operation
 5.	Download the output file
+
+![](doc/images/assign_clades-fasta_file_after_assigning_clades.png)
 
 ## Change Fasta Deflines
 Renames definition lines in fasta files. Requires a fasta file requiring sequence name changes and a 2-column renaming file (either tab-delimited text or csv). Searches for fasta definition lines matching column 1 and, if found, replaces fasta definition line with string specified in column 2 of the renaming file.
