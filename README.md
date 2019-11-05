@@ -60,7 +60,7 @@ Transforms fasta files of flu antigenic site amino acids into aggregated line li
 6.	Execute the operation
 7.	Download the output file
 
-[](doc/images/aggregate_line_list-output.png)
+![](doc/images/aggregate_line_list-output.png)
 
 ## Antigenic Site Extraction
 Extracts antigenic amino acids from influenza hemagglutinin (HA) sequences, using a flu type-specific array of amino acid positions to be extracted (i.e. for H3, H1 etc.), and outputs as a fasta file.
