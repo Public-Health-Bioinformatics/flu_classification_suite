@@ -88,7 +88,7 @@ Assigns clade designations to influenza HA amino acid fasta files.
 **Output** - fasta
 
 1. Select the **Assign Clades** tool
-2.	Select the fasta file containing the amino acid sequences under **input_fasta**
+2.	Select the [fasta file](doc/images/assign_clades-fasta_file_before_assigning_clades.png) containing the amino acid sequences under **input_fasta**
 3.	Select the clade definition file under **clade_definitions** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
 4.	Execute the operation
 5.	Download the output file
