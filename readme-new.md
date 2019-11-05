@@ -44,45 +44,6 @@ Template files and sample input and output files can be found in the 'test-data'
 
 Each tool can be selected from the “Influenza Classification Suite” menu and used individually or chained together to create a workflow. 
 
-## Aggregate Line List
-Transforms fasta files of flu antigenic site amino acids into aggregated line lists, comparing antigenic maps to that of a reference sequence and collapsing and enumerating identical sequences.
-
-**Input** - Antigenic Site Extraction output (fasta), amino acid index array (csv), clade definition file (csv)  
-**Output** - csv
-
-1.	Select the **Aggregate Line List** tool
-2.	Input the fasta file with extracted antigenic maps and clade calls under **Sample Sequences fasta**
-3.	Input the fasta file with the reference sequence antigenic map under **Reference Sequence fasta**
-4.	Select the index array under **Antigenic Site Index Array File** (*Note: The index array file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
-5.	Select the clade definition file under **Clade Definition File** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
-6.	Execute the operation
-7.	Download the output file
-
-## Antigenic Site Extraction
-Extracts antigenic amino acids from influenza hemagglutinin (HA) sequences, using a flu type-specific array of amino acid positions to be extracted (i.e. for H3, H1 etc.), and outputs as a fasta file.
-
-**Input** - Assign Clades output (fasta), amino acid index array (csv)  
-**Output** - fasta, csv
-
-1.	Select the **Antigenic Site Extraction** tool
-2.	Select the fasta file with protein sequences to extract under **input_fasta**
-3.	Select the antigenic site index array file under **index_array** (*Note: The index array file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
-4.	Choose **Yes** to output results in csv format (*Note: The default **No** selection outputs results in fasta*)
-5.	Execute the operation
-6.	Download the output file
-
-## Assign Clades
-Assigns clade designations to influenza HA amino acid fasta files.
-
-**Input** - Sequence files (fasta), clade definition file (csv)  
-**Output** - fasta
-
-1. Select the **Assign Clades** tool
-2.	Select the fasta file containing the amino acid sequences under **input_fasta**
-3.	Select the clade definition file under **clade_definitions** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
-4.	Execute the operation
-5.	Download the output file
-
 ## Change Fasta Deflines
 Renames definition lines in fasta files. Requires a fasta file requiring sequence name changes and a 2-column renaming file (either tab-delimited text or csv). Searches for fasta definition lines matching column 1 and, if found, replaces fasta definition line with string specified in column 2 of the renaming file.
 
@@ -98,6 +59,31 @@ Renames definition lines in fasta files. Requires a fasta file requiring sequenc
 7.	Select **Yes/No** under the **“Names file is tab-delimited”** (*Note: The default renaming file format is csv and the default selection is set to “No”*)
 8.	Press **Execute** to start the operation
 
+## Assign Clades
+Assigns clade designations to influenza HA amino acid fasta files.
+
+**Input** - Sequence files (fasta), clade definition file (csv)  
+**Output** - fasta
+
+1. Select the **Assign Clades** tool
+2.	Select the fasta file containing the amino acid sequences under **input_fasta**
+3.	Select the clade definition file under **clade_definitions** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
+4.	Execute the operation
+5.	Download the output file
+
+## Antigenic Site Extraction
+Extracts antigenic amino acids from influenza hemagglutinin (HA) sequences, using a flu type-specific array of amino acid positions to be extracted (i.e. for H3, H1 etc.), and outputs as a fasta file.
+
+**Input** - Assign Clades output (fasta), amino acid index array (csv)  
+**Output** - fasta, csv
+
+1.	Select the **Antigenic Site Extraction** tool
+2.	Select the fasta file with protein sequences to extract under **input_fasta**
+3.	Select the antigenic site index array file under **index_array** (*Note: The index array file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
+4.	Choose **Yes** to output results in csv format (*Note: The default **No** selection outputs results in fasta*)
+5.	Execute the operation
+6.	Download the output file
+
 ## Line List
 Transforms fasta files of flu antigenic site amino acids into line lists, comparing antigenic maps to that of a reference sequence.
 
@@ -105,6 +91,20 @@ Transforms fasta files of flu antigenic site amino acids into line lists, compar
 **Output** - csv
 
 1.	Select the **Line List** tool
+2.	Input the fasta file with extracted antigenic maps and clade calls under **Sample Sequences fasta**
+3.	Input the fasta file with the reference sequence antigenic map under **Reference Sequence fasta**
+4.	Select the index array under **Antigenic Site Index Array File** (*Note: The index array file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
+5.	Select the clade definition file under **Clade Definition File** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
+6.	Execute the operation
+7.	Download the output file
+
+## Aggregate Line List
+Transforms fasta files of flu antigenic site amino acids into aggregated line lists, comparing antigenic maps to that of a reference sequence and collapsing and enumerating identical sequences.
+
+**Input** - Antigenic Site Extraction output (fasta), amino acid index array (csv), clade definition file (csv)  
+**Output** - csv
+
+1.	Select the **Aggregate Line List** tool
 2.	Input the fasta file with extracted antigenic maps and clade calls under **Sample Sequences fasta**
 3.	Input the fasta file with the reference sequence antigenic map under **Reference Sequence fasta**
 4.	Select the index array under **Antigenic Site Index Array File** (*Note: The index array file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
@@ -135,7 +135,6 @@ While each tool could be selected from the “Influenza Classification Suite” 
 7.	Wait for each workflow step to complete (*highlighted in green*)
 8. Download or delete output files from each step as desired
 
-
 ## Assign clades, extract antigenic maps and output to line list
 **Input** - Sequence files (fasta), reference antigenic map (e.g. vaccine influenza strain) (fasta), clade definition file (csv), amino acid index array (csv) (*Note: Use the provided reference antigenic map, clade definition and amino acid index array files or provide your own respective versions of these files*)
 
@@ -150,7 +149,6 @@ While each tool could be selected from the “Influenza Classification Suite” 
 7.	Select **Run workflow** to execute the operations
 8.	Wait for each workflow step to complete (*highlighted in green*)
 9. Download or delete output files from each step as desired
-
 
 ## Assign clades, extract antigenic maps and output to aggregated line list
 **Input** - Sequence files (fasta), reference antigenic map (e.g. vaccine influenza strain) (fasta), clade definition file (csv), amino acid index array (csv) (*Note: Use the provided reference antigenic map, clade definition and amino acid index array files or provide your own respective versions of these files*)
