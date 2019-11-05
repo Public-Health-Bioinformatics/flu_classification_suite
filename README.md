@@ -47,6 +47,8 @@ Each tool can be selected from the “Influenza Classification Suite” menu and
 ## Aggregate Line List
 Transforms fasta files of flu antigenic site amino acids into aggregated line lists, comparing antigenic maps to that of a reference sequence and collapsing and enumerating identical sequences.
 
+[](doc/images/aggLL-align_sample_antigenic_sites_to_ref.png)
+
 **Input** - Antigenic Site Extraction output (fasta), amino acid index array (csv), clade definition file (csv)  
 **Output** - csv
 
@@ -57,6 +59,8 @@ Transforms fasta files of flu antigenic site amino acids into aggregated line li
 5.	Select the clade definition file under **Clade Definition File** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
 6.	Execute the operation
 7.	Download the output file
+
+[Example output from Aggregate Line List tool](doc/images/aggregate_line_list-output.png)
 
 ## Antigenic Site Extraction
 Extracts antigenic amino acids from influenza hemagglutinin (HA) sequences, using a flu type-specific array of amino acid positions to be extracted (i.e. for H3, H1 etc.), and outputs as a fasta file.
