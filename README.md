@@ -113,6 +113,8 @@ Renames definition lines in fasta files. Requires a fasta file requiring sequenc
 ## Line List
 Transforms fasta files of flu antigenic site amino acids into line lists, comparing antigenic maps to that of a reference sequence.
 
+![](doc/images/line-list-tool-usage.png)
+
 **Input** - Antigenic Site Extraction output (fasta), amino acid index array (csv), clade definition file (csv)  
 **Output** - csv
 
@@ -123,6 +125,8 @@ Transforms fasta files of flu antigenic site amino acids into line lists, compar
 5.	Select the clade definition file under **Clade Definition File** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
 6.	Execute the operation
 7.	Download the output file
+
+![](doc/images/doc/images/lline_list-output.png)
 
 ## Reformat USearch-Collapsed Fasta
 Parses format of USearch-collapsed fasta output files and outputs fasta with customized definition line formatting.
