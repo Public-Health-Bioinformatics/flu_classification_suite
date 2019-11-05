@@ -126,7 +126,7 @@ Transforms fasta files of flu antigenic site amino acids into line lists, compar
 6.	Execute the operation
 7.	Download the output file
 
-![](doc/images/doc/images/lline_list-output.png)
+![](doc/images/lline_list-output.png)
 
 ## Reformat USearch-Collapsed Fasta
 Parses format of USearch-collapsed fasta output files and outputs fasta with customized definition line formatting.
