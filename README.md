@@ -59,6 +59,7 @@ Transforms fasta files of flu antigenic site amino acids into aggregated line li
 5.	Select the clade definition file under **Clade Definition File** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
 6.	Execute the operation
 7.	Download the output file
+8. View the line list as a [spreadsheet](doc/images/spreadsheet_view_linelist_and_agg_linelist.pdf) to compare antigenic amino acid sequences of samples to the reference.
 
 ![](doc/images/aggregate_line_list-output.png)
 
@@ -129,6 +130,7 @@ Transforms fasta files of flu antigenic site amino acids into line lists, compar
 5.	Select the clade definition file under **Clade Definition File** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
 6.	Execute the operation
 7.	Download the output file
+8. View the line list as a [spreadsheet](doc/images/spreadsheet_view_linelist_and_agg_linelist.pdf) to compare antigenic amino acid sequences of samples to the reference.
 
 ![](doc/images/lline_list-output.png)
 
