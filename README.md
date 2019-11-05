@@ -29,9 +29,9 @@ Influenza viruses continually evolve to evade population immunity. We have devel
 
 Task | Action
 ------------ | -------------
-[Upload a fasta file](https://github.com/Public-Health-Bioinformatics/flu_classification_suite/blob/master/doc/images/viewing_data_in_galaxy.png) | <ul><li> Select **Get Data** from the **Tools** menu </li><li> Select **Upload File from your computer**</li><li> Drag the fasta file(s) into the window </li><li> Select **Start** to upload the file(s) </li><li> Select **Close** once each file's green progress bar reads 100% </li><li> Collapse the **Get Data** menu by selecting it </li></ul>	
+[Upload a fasta file](https://github.com/Public-Health-Bioinformatics/flu_classification_suite/blob/master/doc/images/uploading_data_to_galaxy.png) | <ul><li> Select **Get Data** from the **Tools** menu </li><li> Select **Upload File from your computer**</li><li> Drag the fasta file(s) into the window </li><li> Select **Start** to upload the file(s) </li><li> Select **Close** once each file's green progress bar reads 100% </li><li> Collapse the **Get Data** menu by selecting it </li></ul>	
 Upload a comma-separated value (csv) file | <ul><li> Select **Get Data** from the **Tools** menu </li><li> Select **Upload File from your computer** </li><li> Drag the csv file(s) into the window </li><li> Select "csv" under the **Type** column </li><li> Select **Start** to upload the file(s) </li><li> Select **Close** once each file's green progress bar reads 100% </li><li> Collapse the **Get Data** menu by selecting it </li></ul>
-View the contents of a file | <ul><li> Select the eye icon by the filename </li></ul>
+[View the contents of a file](https://github.com/Public-Health-Bioinformatics/flu_classification_suite/blob/master/doc/images/viewing_data_in_galaxy.png) | <ul><li> Select the eye icon by the filename </li></ul>
 Remove a file | <ul><li> Select the pencil icon by the filename </li></ul>
 Download a file | <ul><li> Select the computer disk icon by the filename </li></ul>
 View the metadata of a file | <ul><li> Select the information icon by the filename </li></ul>
