@@ -198,6 +198,8 @@ While each tool could be selected from the “Influenza Classification Suite” 
 
 ## Assign clades and extract antigenic maps
 
+This workflow assigns and appends clade names to fasta definition lines of flu HA amino acid sequences. It then extracts the antigenic amino acids and outputs the resulting antigenic maps in fasta format.
+
 ![](doc/images/assign-clades-and-extract-antigenic-maps-workflow.png)
 
 **Input** - Sequence files (fasta), clade definition file (csv), amino acid index array (csv) (*Note: Use the provided clade definition and amino acid index array files or provide your own respective versions of these files*)
@@ -216,6 +218,8 @@ While each tool could be selected from the “Influenza Classification Suite” 
 ![](doc/images/Assign-clades-and-extract-antigenic-maps-workflow-usage.png)
 
 ## Assign clades, extract antigenic maps and output to line list
+
+This workflow assigns and appends clade names to fasta definition lines of flu HA amino acid sequences, extracts the antigenic sites and displays the resulting sequences in relation to a reference (e.g. vaccine strain) sequence in a csv file.
 
 ![](doc/images/assign_clades_extract_antigenic_sites_output_to_line_list-workflow.png)
 
@@ -236,6 +240,8 @@ While each tool could be selected from the “Influenza Classification Suite” 
 ![](doc/images/assign_clades_extract_antigenic_sites_output_to_line_list-usage.png)
 
 ## Assign clades, extract antigenic maps and output to aggregated line list
+
+This workflow assigns and appends clade names to fasta definition lines of flu HA amino acid sequences, extracts antigenic sites and displays the resulting sequences in relation to a reference (e.g. vaccine strain) sequence in a csv file. In addition, the aggregated view collapses and enumerates identical antigenic map sequences among samples.
 
 ![](doc/images/assign_clades_extract_antigenic_sites_output_to_aggregated_line_list-workflow.png)
 
