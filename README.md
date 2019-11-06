@@ -40,7 +40,7 @@ Use an individual tool | <ul><li> Select the tool under **Flu Classification Sui
 Use a workflow | <ul><li> Select the workflow under **Flu Classification Suite** in the **Tools** pane </li><li> Input the required files </li><li> Select **Run workflow** to execute the operations </li></ul>
 Determine if a tool is running | The operation will display as highlighted in grey while it is waiting to start on the server, as yellow during execution, and as green when complete
 
-[Galaxy 101] tutorial for beginners (https://galaxyproject.org/tutorials/g101/)
+New to Galaxy? Try [Galaxy 101 tutorial](https://galaxyproject.org/tutorials/g101/)
 
 # Tools 
 Template files and sample input and output files can be found in the 'test-data' folder for each respective tool.
