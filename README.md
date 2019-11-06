@@ -183,6 +183,8 @@ Parses format of USearch-collapsed fasta output files and applies a custom forma
 
 **Command line usage**
 
+    python reformat_usearch_collapsed_fasta.py usearch_collapsed_sequences.fasta output.fasta
+
 **Galaxy tool usage**
 1.	Select the **Reformat USearch-Collapsed Fasta** tool
 2.	Select the [USearch-collapsed fasta file to reformat](doc/images/usearch-collapsed-fasta-before-reformat.png) under **input_fasta**
