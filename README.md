@@ -197,6 +197,9 @@ Parses format of USearch-collapsed fasta output files and applies a custom forma
 While each tool could be selected from the “Influenza Classification Suite” menu and used individually, a workflow was created by chaining tools in a pipeline to automate a series of tasks in a standardized, user-friendly manner.
 
 ## Assign clades and extract antigenic maps
+
+![](doc/images/assign-clades-and-extract-antigenic-maps-workflow.png)
+
 **Input** - Sequence files (fasta), clade definition file (csv), amino acid index array (csv) (*Note: Use the provided clade definition and amino acid index array files or provide your own respective versions of these files*)
 
 **Output** - csv
@@ -209,6 +212,8 @@ While each tool could be selected from the “Influenza Classification Suite” 
 6.	Select **Run workflow** to execute the operations
 7.	Wait for each workflow step to complete (*highlighted in green*)
 8. Download or delete output files from each step as desired
+
+![](doc/images/Assign-clades-and-extract-antigenic-maps-workflow-usage.png)
 
 ## Assign clades, extract antigenic maps and output to line list
 **Input** - Sequence files (fasta), reference antigenic map (e.g. vaccine influenza strain) (fasta), clade definition file (csv), amino acid index array (csv) (*Note: Use the provided reference antigenic map, clade definition and amino acid index array files or provide your own respective versions of these files*)
