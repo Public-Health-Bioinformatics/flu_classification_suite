@@ -54,10 +54,10 @@ Renames definition lines in fasta files. Requires a fasta file requiring sequenc
 
 **Command line usage**
 
-   ###Using csv renaming file: 
+   Using csv renaming file: 
       `python change_fasta_def_lines.py csv_rename_file.csv fasta_2_rename.fasta   renamedSequences.fasta`
 
-   ###Using tsv renaming file: 
+   Using tsv renaming file: 
       `python change_fasta_def_lines.py tab_delim_rename_file.txt -t fasta_2_rename.fasta renamedSequences.fasta`
 
 **Galaxy tool usage**
