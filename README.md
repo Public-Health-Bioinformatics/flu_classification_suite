@@ -135,7 +135,7 @@ Transforms fasta files of flu antigenic site amino acids into aggregated line li
 ![](doc/images/aggregate_line_list-output.png)
 
 ## Reformat USearch-Collapsed Fasta
-Parses format of USearch-collapsed fasta output files and outputs fasta with customized definition line formatting.
+Parses format of USearch-collapsed fasta output files and applied a custom format to the fasta definition lines.
 
 ![](doc/images/reformat-usearch-collapsed-fasta-usage.png)
 
