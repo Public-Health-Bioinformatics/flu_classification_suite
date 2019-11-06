@@ -48,7 +48,7 @@ Template files and sample input and output files can be found in the 'test-data'
 Each tool can be selected from the “Influenza Classification Suite” menu and used individually or chained together to create a workflow. 
 
 ## Change Fasta Deflines
-Renames definition lines in fasta files. Requires a fasta file requiring sequence name changes and a 2-column renaming file (either [tab-delimited text](doc/images/change_fasta_deflines-tsv_renaming-file.tsv) or [csv](doc/images/change_fasta_deflines-csv_renaming-file.csv)). Searches for fasta definition lines matching column 1 and, if found, replaces fasta definition line with string specified in column 2 of the renaming file.
+Renames definition lines in fasta files. Requires a fasta file requiring sequence name changes and a 2-column renaming file (either [tab-delimited text](doc/images/change_fasta_deflines-tsv_renaming-file.tsv) or [csv](doc/images/change_fasta_deflines-csv_renaming-file.csv). Searches for fasta definition lines matching column 1 and, if found, replaces fasta definition line with string specified in column 2 of the renaming file.
 
 ![](doc/images/change-fasta-deflines-tool-usage-with-csv.png)
 
