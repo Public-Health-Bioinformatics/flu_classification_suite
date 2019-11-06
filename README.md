@@ -32,12 +32,14 @@ Task | Action
 [Upload a fasta file](https://github.com/Public-Health-Bioinformatics/flu_classification_suite/blob/master/doc/images/uploading_data_to_galaxy.png) | <ul><li> Select **Get Data** from the **Tools** menu </li><li> Select **Upload File from your computer**</li><li> Drag the fasta file(s) into the window </li><li> Select **Start** to upload the file(s) </li><li> Select **Close** once each file's green progress bar reads 100% </li><li> Collapse the **Get Data** menu by selecting it </li></ul>	
 Upload a comma-separated value (csv) file | <ul><li> Select **Get Data** from the **Tools** menu </li><li> Select **Upload File from your computer** </li><li> Drag the csv file(s) into the window </li><li> Select "csv" under the **Type** column </li><li> Select **Start** to upload the file(s) </li><li> Select **Close** once each file's green progress bar reads 100% </li><li> Collapse the **Get Data** menu by selecting it </li></ul>
 [View the contents of a file](https://github.com/Public-Health-Bioinformatics/flu_classification_suite/blob/master/doc/images/viewing_data_in_galaxy.png) | <ul><li> Select the eye icon by the filename </li></ul>
-Remove a file | <ul><li> Select the pencil icon by the filename </li></ul>
+Edit a file | <ul><li> Select the pencil icon by the filename </li></ul>
+Remove a file | <ul><li> Select the `X` icon by the filename </li></ul>
 Download a file | <ul><li> Select the computer disk icon by the filename </li></ul>
 View the metadata of a file | <ul><li> Select the information icon by the filename </li></ul>
 Use an individual tool | <ul><li> Select the tool under **Flu Classification Suite** in the **Tools** pane </li><li> Input the required files </li><li>	Execute the operation </li></ul>	
 Use a workflow | <ul><li> Select the workflow under **Flu Classification Suite** in the **Tools** pane </li><li> Input the required files </li><li> Select **Run workflow** to execute the operations </li></ul>
 Determine if a tool is running | The operation will display as highlighted in grey while it is waiting to start on the server, as yellow during execution, and as green when complete
+[Galaxy 101] tutorial for beginners (https://galaxyproject.org/tutorials/g101/)
 
 # Tools 
 Template files and sample input and output files can be found in the 'test-data' folder for each respective tool.
