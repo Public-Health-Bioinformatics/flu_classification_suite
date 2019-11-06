@@ -107,11 +107,11 @@ Extracts antigenic amino acids from influenza hemagglutinin (HA) sequences, usin
 
    Output extracted antigenic amino acids to fasta:
    
-      `python antigenic_site_extraction.py input-sequences.fasta amino-acid-index-array.csv extracted-antigenic-sites.fasta`
+      `python antigenic_site_extraction.py input.fasta index-array.csv extracted-antigenic-sites.fasta`
    
    Output extracted antigenic amino acids to csv:
    
-      `python antigenic_site_extraction.py input-sequences.fasta amino-acid-index-array.csv -c extracted-antigenic-sites.csv`
+      `python antigenic_site_extraction.py input.fasta index-array.csv -c extracted-antigenic-sites.csv`
 
 **Galaxy tool usage**
 1.	Select the **Antigenic Site Extraction** tool
