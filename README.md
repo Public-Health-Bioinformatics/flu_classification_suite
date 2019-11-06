@@ -156,6 +156,7 @@ Transforms fasta files of flu antigenic site amino acids into aggregated line li
 **Output** - csv
 
 **Command line usage**
+
   `python aggregate_linelisting.py input.fasta reference-antigenic-sites.fasta index-array.csv clade-definitions.csv output.csv`
 
 
