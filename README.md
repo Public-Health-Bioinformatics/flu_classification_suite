@@ -51,7 +51,9 @@ Renames definition lines in fasta files. Requires a fasta file requiring sequenc
 
 **Input** - Sequence file to be renamed (fasta), 2-column renaming file (txt or csv)  
 **Output** - fasta
+**Command line usage**
 
+**Galaxy tool usage**
 1. Create a renaming file in Excel with current sequence names in column 1 and desired names in column 2 and export in [csv](doc/images/change-fasta-deflines-csv-seq-rename-file.png) or [tsv](doc/images/change-fasta-deflines-tsv-seq-rename-file.png) format
 2. Upload this file into Galaxy
 3. *If the renaming file is tab-delimited text, select the pencil icon beside the file name, select datatypes, and ensure the datatype displayed is "csv"*
@@ -70,7 +72,9 @@ Assigns clade designations to influenza HA amino acid fasta files.
 
 **Input** - Sequence files (fasta), clade definition file (csv)  
 **Output** - fasta
+**Command line usage**
 
+**Galaxy tool usage**
 1. Select the **Assign Clades** tool
 2.	Select the [fasta file (without clades assigned)](doc/images/assign_clades-fasta_file_before_assigning_clades.png) containing the amino acid sequences under **input_fasta**
 3.	Select the clade definition file under **clade_definitions** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
@@ -86,7 +90,9 @@ Extracts antigenic amino acids from influenza hemagglutinin (HA) sequences, usin
 
 **Input** - Assign Clades output (fasta), amino acid index array (csv)  
 **Output** - fasta, csv
+**Command line usage**
 
+**Galaxy tool usage**
 1.	Select the **Antigenic Site Extraction** tool
 2.	Select the fasta file with protein sequences to extract under **input_fasta**
 3.	Select the antigenic site index array file under **index_array** (*Note: The index array file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
@@ -103,7 +109,9 @@ Transforms fasta files of flu antigenic site amino acids into line lists, compar
 
 **Input** - Antigenic Site Extraction output (fasta), amino acid index array (csv), clade definition file (csv)  
 **Output** - csv
+**Command line usage**
 
+**Galaxy tool usage**
 1.	Select the **Line List** tool
 2.	Input the fasta file with extracted antigenic maps and clade calls under **Sample Sequences fasta**
 3.	Input the fasta file with the reference sequence antigenic map under **Reference Sequence fasta**
@@ -122,7 +130,9 @@ Transforms fasta files of flu antigenic site amino acids into aggregated line li
 
 **Input** - Antigenic Site Extraction output (fasta), amino acid index array (csv), clade definition file (csv)  
 **Output** - csv
+**Command line usage**
 
+**Galaxy tool usage**
 1.	Select the **Aggregate Line List** tool
 2.	Input the fasta file with extracted antigenic maps and clade calls under **Sample Sequences fasta**
 3.	Input the fasta file with the reference sequence antigenic map under **Reference Sequence fasta**
@@ -142,7 +152,9 @@ Parses format of USearch-collapsed fasta output files and applies a custom forma
 **Input** - [USearch-outputted sequence files (fasta)](tools/reformat_usearch_collapsed_fasta/test-data/10_usearch_collapsed_sequences.fasta)
 
 **Output** - [sequence files with custom-formatted definition lines (fasta)](tools/reformat_usearch_collapsed_fasta/test-data/output.fasta)
+**Command line usage**
 
+**Galaxy tool usage**
 1.	Select the **Reformat USearch-Collapsed Fasta** tool
 2.	Select the [USearch-collapsed fasta file to reformat](doc/images/usearch-collapsed-fasta-before-reformat.png) under **input_fasta**
 3.	Execute the operation
