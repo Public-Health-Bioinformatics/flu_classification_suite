@@ -135,9 +135,14 @@ Transforms fasta files of flu antigenic site amino acids into aggregated line li
 ![](doc/images/aggregate_line_list-output.png)
 ## Reformat USearch-Collapsed Fasta
 Parses format of USearch-collapsed fasta output files and outputs fasta with customized definition line formatting.
-**Input** - USearch-outputted sequence files (fasta)
+**Input** - [USearch-outputted sequence files (fasta)](tools/reformat_usearch_collapsed_fasta/test-data/10_usearch_collapsed_sequences.fasta)
 
-**Output** - sequence files with custom-formatted definition lines (fasta)
+**Output** - [sequence files with custom-formatted definition lines (fasta)](tools/reformat_usearch_collapsed_fasta/test-data/output.fasta)
+
+1.	Select the [**Reformat USearch-Collapsed Fasta** tool](doc/images/reformat-usearch-collapsed-fasta-usage.png)
+2.	Select the [USearch-collapsed fasta file to reformat](doc/images/usearch-collapsed-fasta-before-reformat.png) under **input_fasta**
+3.	Execute the operation
+4.	Download the [output file](doc/images/reformat-usearch-collapsed-fasta-output.png)
 
 # Workflows
 While each tool could be selected from the “Influenza Classification Suite” menu and used individually, a workflow was created by chaining tools in a pipeline to automate a series of tasks in a standardized, user-friendly manner.
