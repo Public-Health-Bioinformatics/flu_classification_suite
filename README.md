@@ -56,7 +56,7 @@ Renames definition lines in fasta files. Requires a fasta file requiring sequenc
 
    Using csv renaming file:
    
-      `python change_fasta_def_lines.py csv_rename_file.csv fasta_2_rename.fasta   renamedSequences.fasta`
+      `python change_fasta_def_lines.py csv_rename_file.csv fasta_2_rename.fasta renamedSequences.fasta`
 
    Using tsv renaming file:
    
@@ -83,6 +83,7 @@ Assigns clade designations to influenza HA amino acid fasta files.
 **Output** - fasta
 
 **Command line usage**
+   `python assign_clades.py input_sequences.fasta clade_definitions.csv clade-assigned-output-sequences.fasta`
 
 **Galaxy tool usage**
 1. Select the **Assign Clades** tool
