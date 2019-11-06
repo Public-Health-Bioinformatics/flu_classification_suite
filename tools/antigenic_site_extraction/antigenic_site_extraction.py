@@ -4,6 +4,10 @@
 and outputs extracted sequences - representing flu antigenic sites - to fasta (default) or csv.'''
 
 '''Author: Diane Eisler, Molecular Microbiology & Genomics, BCCDC Public Health Laboratory,Sept 2017'''
+'''Command line:
+   fasta output: python antigenic_site_extraction.py input.fasta index-array.csv extracted-antigenic-sites.fasta
+   csv output: python antigenic_site_extraction.py input.fasta index-array.csv -c extracted-antigenic-sites.csv
+'''
 
 import sys,string,os, time, Bio, argparse
 from Bio import Seq, SeqIO, SeqUtils, Alphabet, SeqRecord
