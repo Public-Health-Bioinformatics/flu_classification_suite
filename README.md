@@ -56,11 +56,11 @@ Renames definition lines in fasta files. Requires a fasta file requiring sequenc
 
    Using csv renaming file:
    
-      `python change_fasta_def_lines.py csv_rename_file.csv fasta_2_rename.fasta renamedSequences.fasta`
+      python change_fasta_def_lines.py csv_rename_file.csv fasta_2_rename.fasta renamedSequences.fasta
 
    Using tsv renaming file:
    
-      `python change_fasta_def_lines.py tab_delim_rename_file.txt -t fasta_2_rename.fasta renamedSequences.fasta`
+      python change_fasta_def_lines.py tab_delim_rename_file.txt -t fasta_2_rename.fasta renamedSequences.fasta
 
 **Galaxy tool usage**
 1. Create a renaming file in Excel with current sequence names in column 1 and desired names in column 2 and export in [csv](doc/images/change-fasta-deflines-csv-seq-rename-file.png) or [tsv](doc/images/change-fasta-deflines-tsv-seq-rename-file.png) format
@@ -84,7 +84,7 @@ Assigns clade designations to influenza HA amino acid fasta files.
 
 **Command line usage**
 
-   `python assign_clades.py input_sequences.fasta clade_definitions.csv clade-assigned-output-sequences.fasta`
+   python assign_clades.py input_sequences.fasta clade_definitions.csv clade-assigned-output-sequences.fasta
 
 **Galaxy tool usage**
 1. Select the **Assign Clades** tool
@@ -107,11 +107,11 @@ Extracts antigenic amino acids from influenza hemagglutinin (HA) sequences, usin
 
    Output extracted antigenic amino acids to fasta:
    
-      `python antigenic_site_extraction.py input.fasta index-array.csv extracted-antigenic-sites.fasta`
+      python antigenic_site_extraction.py input.fasta index-array.csv extracted-antigenic-sites.fasta
    
    Output extracted antigenic amino acids to csv:
    
-      `python antigenic_site_extraction.py input.fasta index-array.csv -c extracted-antigenic-sites.csv`
+      python antigenic_site_extraction.py input.fasta index-array.csv -c extracted-antigenic-sites.csv
 
 **Galaxy tool usage**
 1.	Select the **Antigenic Site Extraction** tool
