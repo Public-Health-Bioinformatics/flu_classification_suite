@@ -217,7 +217,7 @@ While each tool could be selected from the “Influenza Classification Suite” 
 
 ## Assign clades, extract antigenic maps and output to line list
 
-![](doc/images/assign_clades_extract_antigenic_sites_output_to_aggregated_line_list-workflow.png)
+
 
 **Input** - Sequence files (fasta), reference antigenic map (e.g. vaccine influenza strain) (fasta), clade definition file (csv), amino acid index array (csv) (*Note: Use the provided reference antigenic map, clade definition and amino acid index array files or provide your own respective versions of these files*)
 
@@ -236,6 +236,9 @@ While each tool could be selected from the “Influenza Classification Suite” 
 ![](doc/images/assign_clades_extract_antigenic_sites_output_to_aggregated_line_list-usage.png)
 
 ## Assign clades, extract antigenic maps and output to aggregated line list
+
+![](doc/images/assign_clades_extract_antigenic_sites_output_to_aggregated_line_list-workflow.png)
+
 **Input** - Sequence files (fasta), reference antigenic map (e.g. vaccine influenza strain) (fasta), clade definition file (csv), amino acid index array (csv) (*Note: Use the provided reference antigenic map, clade definition and amino acid index array files or provide your own respective versions of these files*)
 
 **Output** - csv
@@ -249,3 +252,5 @@ While each tool could be selected from the “Influenza Classification Suite” 
 7.	Select **Run workflow** to execute the operations
 8.	Wait for each workflow step to complete (*highlighted in green*)
 9. Download or delete output files from each step as desired
+
+![](doc/images/assign_clades_extract_antigenic_sites_output_to_aggregated_line_list-workflow-usage.png)
