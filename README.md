@@ -51,6 +51,7 @@ Renames definition lines in fasta files. Requires a fasta file requiring sequenc
 
 **Input** - Sequence file to be renamed (fasta), 2-column renaming file (txt or csv)  
 **Output** - fasta
+
 **Command line usage**
 
 **Galaxy tool usage**
@@ -72,6 +73,7 @@ Assigns clade designations to influenza HA amino acid fasta files.
 
 **Input** - Sequence files (fasta), clade definition file (csv)  
 **Output** - fasta
+
 **Command line usage**
 
 **Galaxy tool usage**
@@ -90,6 +92,7 @@ Extracts antigenic amino acids from influenza hemagglutinin (HA) sequences, usin
 
 **Input** - Assign Clades output (fasta), amino acid index array (csv)  
 **Output** - fasta, csv
+
 **Command line usage**
 
 **Galaxy tool usage**
@@ -109,6 +112,7 @@ Transforms fasta files of flu antigenic site amino acids into line lists, compar
 
 **Input** - Antigenic Site Extraction output (fasta), amino acid index array (csv), clade definition file (csv)  
 **Output** - csv
+
 **Command line usage**
 
 **Galaxy tool usage**
@@ -130,6 +134,7 @@ Transforms fasta files of flu antigenic site amino acids into aggregated line li
 
 **Input** - Antigenic Site Extraction output (fasta), amino acid index array (csv), clade definition file (csv)  
 **Output** - csv
+
 **Command line usage**
 
 **Galaxy tool usage**
@@ -152,6 +157,7 @@ Parses format of USearch-collapsed fasta output files and applies a custom forma
 **Input** - [USearch-outputted sequence files (fasta)](tools/reformat_usearch_collapsed_fasta/test-data/10_usearch_collapsed_sequences.fasta)
 
 **Output** - [sequence files with custom-formatted definition lines (fasta)](tools/reformat_usearch_collapsed_fasta/test-data/output.fasta)
+
 **Command line usage**
 
 **Galaxy tool usage**
