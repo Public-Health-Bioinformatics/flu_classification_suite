@@ -7,7 +7,7 @@ each of the amino acid sequence objects for a list of matching clades, assigns
 the most 'evolved' (i.e. child as opposed to parent clade) to the sequence. Appends
 "_cladename" to the Sequence name and generates a fasta file of original sequences with 
 modified names.'''
-
+#Command line: python assign_clades.py input_sequences.fasta clade_definitions.csv clade-assigned-output-sequences.fasta
 '''Author: Diane Eisler, Molecular Microbiology & Genomics, BCCDC Public Health Laboratory, Oct 2017'''
 
 import sys,string,os, time, Bio
