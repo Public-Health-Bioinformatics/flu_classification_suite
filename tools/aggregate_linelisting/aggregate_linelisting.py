@@ -7,6 +7,9 @@ acid sequence and column headings required for both non-aggregated and aggregate
 Outputs all headers and modified (i.e. dotted) sample sequences to a csv file.'''
 
 '''Author: Diane Eisler, Molecular Microbiology & Genomics, BCCDC Public Health Laboratory, Jan 2018'''
+'''Command line:
+python aggregate_linelisting.py input.fasta reference-antigenic-sites.fasta index-array.csv clade-definitions.csv output.csv
+'''
 
 import sys,string,os, time, Bio, re, argparse
 from Bio import Seq, SeqIO, SeqUtils, Alphabet, SeqRecord
