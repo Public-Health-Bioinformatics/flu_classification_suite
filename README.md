@@ -133,6 +133,8 @@ Transforms fasta files of flu antigenic site amino acids into line lists, compar
 
 **Command line usage**
 
+  `python linelisting.py input.fasta reference-antigenic-sites.fasta index-array.csv clade-definitions.csv output.csv`
+
 **Galaxy tool usage**
 1.	Select the **Line List** tool
 2.	Input the fasta file with extracted antigenic maps and clade calls under **Sample Sequences fasta**
