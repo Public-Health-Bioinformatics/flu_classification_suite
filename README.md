@@ -82,7 +82,7 @@ Assigns clade designations to influenza HA amino acid fasta files.
 
 ![](doc/images/assign_clades-tool_image.png)
 
-**Input** - Sequence files (fasta), clade definition file (csv)  
+**Input** - Sequence files (fasta), [clade definition file (csv)] (tools/assign_clades/test-data/clades.csv)  
 **Output** - fasta
 
 **Command line usage**
