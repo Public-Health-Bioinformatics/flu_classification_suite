@@ -52,7 +52,7 @@ Renames definition lines in fasta files. Requires a fasta file requiring sequenc
 
 ![](doc/images/change-fasta-deflines-tool-usage-with-csv.png)
 
-**Input** - Sequence file to be renamed (fasta), 2-column renaming file (txt or csv)  
+**Input** - Sequence file to be renamed (fasta), 2-column renaming file ([csvtools/change_fasta_deflines/test-data/csv_rename_file.csv or [txt](tools/change_fasta_deflines/test-data/tab_delim_rename_file.txt))  
 **Output** - fasta
 
 **Command line usage**
