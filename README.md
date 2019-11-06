@@ -82,7 +82,7 @@ Assigns clade designations to influenza HA amino acid fasta files.
 
 ![](doc/images/assign_clades-tool_image.png)
 
-**Input** - Sequence files (fasta), [clade definition file (csv)] (tools/assign_clades/test-data/clades.csv)  
+**Input** - Sequence files (fasta), [clade definition file (csv)](tools/assign_clades/test-data/clades.csv)  
 **Output** - fasta
 
 **Command line usage**
@@ -103,7 +103,7 @@ Extracts antigenic amino acids from influenza hemagglutinin (HA) sequences, usin
 
 ![](doc/images/antigenic-site-extraction_tool_usage.png)
 
-**Input** - Assign Clades output (fasta), amino acid index array (csv)  
+**Input** - Assign Clades output (fasta), [amino acid index array (csv)](tools/antigenic_site_extraction/test-data/)  
 **Output** - fasta, csv
 
 **Command line usage**
@@ -131,7 +131,7 @@ Transforms fasta files of flu antigenic site amino acids into line lists, compar
 
 ![](doc/images/line-list-tool-usage.png)
 
-**Input** - Antigenic Site Extraction output (fasta), amino acid index array (csv), clade definition file (csv)  
+**Input** - Antigenic Site Extraction output (fasta), [amino acid index array (csv)](tools/linelisting/test-data/FluA_H3_antigenic_aa_indices.csv), [clade definition file (csv)](tools/linelisting/test-data/Flu_Clade_Definitions_H3_20171121.csv)  
 **Output** - csv
 
 **Command line usage**
@@ -155,7 +155,7 @@ Transforms fasta files of flu antigenic site amino acids into aggregated line li
 
 ![](doc/images/aggLL-align_sample_antigenic_sites_to_ref.png)
 
-**Input** - Antigenic Site Extraction output (fasta), amino acid index array (csv), clade definition file (csv)  
+**Input** - Antigenic Site Extraction output (fasta), [amino acid index array (csv)](tools/aggregate_linelisting/test-data/FluA_H3_antigenic_aa_indices.csv), [clade definition file (csv)](tools/aggregate_linelisting/test-data/Flu_Clade_Definitions_H3_20171121.csv)   
 **Output** - csv
 
 **Command line usage**
@@ -209,6 +209,7 @@ This workflow assigns and appends clade names to fasta definition lines of flu H
 
 **Output** - csv
 
+**Galaxy tool usage**
 1.	Select the workflow **Assign clades and extract antigenic maps**
 2.	Select whether to send the results to a new history (*Note: This is not required but facilitates convenient tracking and deletion of files within an analysis run*)
 3.	Select the clade definition file under **Clade Definitions** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
@@ -230,6 +231,7 @@ This workflow assigns and appends clade names to fasta definition lines of flu H
 
 **Output** - csv
 
+**Galaxy tool usage**
 1.	Select the workflow **Assign clades, extract antigenic maps and output to line list**
 2.	Select whether to send the results to a new history (*Note: This is not required but facilitates convenient tracking and deletion of files within an analysis run*)
 3.	Select the clade definition file under **Clade Definitions** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
@@ -252,6 +254,7 @@ This workflow assigns and appends clade names to fasta definition lines of flu H
 
 **Output** - csv
 
+**Galaxy tool usage**
 1.	Select the workflow **Assign clades, extract antigenic maps and output to aggregated line list**
 2.	Select whether to send the results to a new history (*Note: This is not required but facilitates convenient tracking and deletion of files within an analysis run*)
 3.	Select the clade definition file under **Clade Definitions** (*Note: The clade definition file must be in csv format and of the correct version for the respective flu type to obtain accurate results*)
