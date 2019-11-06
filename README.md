@@ -84,7 +84,7 @@ Assigns clade designations to influenza HA amino acid fasta files.
 
 **Command line usage**
 
-   python assign_clades.py input_sequences.fasta clade_definitions.csv clade-assigned-output-sequences.fasta
+    python assign_clades.py input_sequences.fasta clade_definitions.csv clade-assigned-output-sequences.fasta
 
 **Galaxy tool usage**
 1. Select the **Assign Clades** tool
