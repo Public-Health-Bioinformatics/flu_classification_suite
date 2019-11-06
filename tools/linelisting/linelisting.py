@@ -8,6 +8,9 @@ headings required for non-aggregated line lists. Outputs headers and modified (i
 sequences to a csv file.'''
 
 '''Author: Diane Eisler, Molecular Microbiology & Genomics, BCCDC Public Health Laboratory, Nov 2017'''
+'''Command line: 
+python linelisting.py input.fasta reference-antigenic-sites.fasta index-array.csv clade-definitions.csv output.csv
+'''
 
 import sys,string,os, time, Bio, re, argparse
 from Bio import Seq, SeqIO, SeqUtils, Alphabet, SeqRecord
