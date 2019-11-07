@@ -28,12 +28,14 @@ Influenza viruses continually evolve to evade population immunity. We have devel
  7. Click 'Install' 
  
  ## Command Line Tools
- 1. Create a new conda environment:
+ 1. Create a new conda environment on the command line:
     `conda create -n   biopython biopython`
  2. Acitvate the environment: 
     `conda activate biopython`
  3. Clone the `flu_classification_suite` repository as follows:
+ 
      i.  Select `Clone or download` on the main respository page at https://github.com/Public-Health-Bioinformatics/flu_classification_suite
+     
      ii. Copy the url by selecting the clipboard icon
      iii.Type the following onto the command line, pasting the copied url in place of `<repo_url>`:
          `git clone <repo_url>`
