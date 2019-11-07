@@ -37,7 +37,8 @@ Influenza viruses continually evolve to evade population immunity. We have devel
        * Copy the **url** by selecting the **clipboard icon**
        * Type the following, pasting the copied url in place of <repo_url>:
             `git clone <repo_url>`
- 
+
+
 # General How-To
 
 Task | Action
