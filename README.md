@@ -17,6 +17,8 @@ Influenza viruses continually evolve to evade population immunity. We have devel
     * [Assign clades, extract antigenic maps and output to aggregated line list](#assign-clades-extract-antigenic-maps-and-output-to-aggregated-line-list)
  
 # Installation
+
+ ## Galaxy Tools
  1. In the Galaxy Admin panel, select 'Install New Tools'
  2. Select the 'Galaxy Test Toolshed'
  3. Search for `flu_classification_suite`
@@ -24,6 +26,17 @@ Influenza viruses continually evolve to evade population immunity. We have devel
  5. Click 'Install to Galaxy'
  6. Select a tool panel section to install the tools under, or create a new section. We recommend creating a section called 'Influenza Classification Suite'
  7. Click 'Install' 
+ 
+ ## Command Line Tools
+ 1. Create a new conda environment:
+    `conda create -n   biopython biopython`
+ 2. Acitvate the environment: 
+    `conda activate biopython`
+ 3. Clone the `flu_classification_suite` repository as follows:
+     i.  Select `Clone or download` on the main respository page at https://github.com/Public-Health-Bioinformatics/flu_classification_suite
+     ii. Copy the url by selecting the clipboard icon
+     iii.Type the following onto the command line, pasting the copied url in place of `<repo_url>`:
+         `git clone <repo_url>`
  
 # General How-To
 
