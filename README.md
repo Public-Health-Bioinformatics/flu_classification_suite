@@ -155,7 +155,7 @@ Transforms fasta files of flu antigenic site amino acids into aggregated line li
 
 ![](doc/images/aggLL-align_sample_antigenic_sites_to_ref.png)
 
-**Input** - Antigenic Site Extraction output (fasta), [amino acid index array (csv)](tools/aggregate_linelisting/test-data/FluA_H3_antigenic_aa_indices.csv), [clade definition file (csv)](tools/aggregate_linelisting/test-data/Flu_Clade_Definitions_H3_20171121.csv)   
+**Input** - Antigenic Site Extraction output (fasta) [(e.g. Flu A/H3 extracted antigenic sites)](tools/aggregate_linelisting/test-data/fluA_H3_clade_assigned_antigenic_sites_extracted.fasta), [amino acid index array (csv)](tools/aggregate_linelisting/test-data/FluA_H3_antigenic_aa_indices.csv), [clade definition file (csv)](tools/aggregate_linelisting/test-data/Flu_Clade_Definitions_H3_20171121.csv)   
 **Output** - csv
 
 **Command line usage**
