@@ -103,7 +103,7 @@ Extracts antigenic amino acids from influenza hemagglutinin (HA) sequences, usin
 
 ![](doc/images/antigenic-site-extraction_tool_usage.png)
 
-**Input** - Assign Clades output (fasta), [amino acid index array (csv)](tools/antigenic_site_extraction/test-data/)  
+**Input** - Clade-assigned sequences (fasta) [e.g. Flu A/H3](tools/assign_clades/test-data/input_fasta.fasta), amino acid index array (csv) [e.g. H3 index array](tools/antigenic_site_extraction/test-data/FluA_H3_antigenic_aa_indices.csv)  
 **Output** - fasta, csv
 
 **Command line usage**
