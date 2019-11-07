@@ -103,7 +103,7 @@ Extracts antigenic amino acids from influenza hemagglutinin (HA) sequences, usin
 
 ![](doc/images/antigenic-site-extraction_tool_usage.png)
 
-**Input** - Clade-assigned sequences (fasta) [(e.g. Flu A/H3)](tools/assign_clades/test-data/input_fasta.fasta), amino acid index array (csv) [(e.g. H3 index array)](tools/antigenic_site_extraction/test-data/FluA_H3_antigenic_aa_indices.csv)  
+**Input** - Assign Clades output (fasta) [(e.g. Flu A/H3)](tools/assign_clades/test-data/input_fasta.fasta), amino acid index array (csv) [(e.g. H3 index array)](tools/antigenic_site_extraction/test-data/FluA_H3_antigenic_aa_indices.csv)  
 **Output** - fasta, csv
 
 **Command line usage**
@@ -131,7 +131,7 @@ Transforms fasta files of flu antigenic site amino acids into line lists, compar
 
 ![](doc/images/line-list-tool-usage.png)
 
-**Input** - Antigenic Site Extraction output (fasta), [amino acid index array (csv)](tools/linelisting/test-data/FluA_H3_antigenic_aa_indices.csv), [clade definition file (csv)](tools/linelisting/test-data/Flu_Clade_Definitions_H3_20171121.csv)  
+**Input** - Antigenic Site Extraction output (fasta) [(e.g. Flu A/H3 antigenic sites)](tools/linelisting/test-data/fluA_H3_clade_assigned_antigenic_sites_extracted.fasta), amino acid index array (csv) [(e.g. Flu A/H3 index array](tools/linelisting/test-data/FluA_H3_antigenic_aa_indices.csv), [clade definition file (csv)](tools/linelisting/test-data/Flu_Clade_Definitions_H3_20171121.csv)  
 **Output** - csv
 
 **Command line usage**
