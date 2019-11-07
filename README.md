@@ -33,9 +33,9 @@ Influenza viruses continually evolve to evade population immunity. We have devel
  2. Acitvate the environment: 
     `conda activate biopython`
  3. Clone the `flu_classification_suite` repository as follows:
-       * Select **"Clone or download"** on the [main respository page] (https://github.com/Public-Health-Bioinformatics/flu_classification_suite)
+       * Select **"Clone or download"** on the [main respository page](https://github.com/Public-Health-Bioinformatics/flu_classification_suite)
        * Copy the **url** by selecting the **clipboard icon**
-       * Type the following, pasting the copied url in place of `<repo_url>`:
+       * Type the following, pasting the copied url in place of <repo_url>:
             `git clone <repo_url>`
  
 # General How-To
